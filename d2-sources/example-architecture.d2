@@ -1,0 +1,40 @@
+# Example Architecture Diagram
+
+direction: right
+
+user: User {
+  shape: person
+  style.fill: "#ffe0b2"
+}
+
+loadbalancer: Load Balancer {
+  shape: hexagon
+  style.fill: "#b3e5fc"
+}
+
+webserver1: Web Server 1 {
+  style.fill: "#c8e6c9"
+}
+
+webserver2: Web Server 2 {
+  style.fill: "#c8e6c9"
+}
+
+database: Database {
+  shape: cylinder
+  style.fill: "#f8bbd0"
+}
+
+cache: Cache {
+  shape: cylinder
+  style.fill: "#fff9c4"
+}
+
+# Connections
+user -> loadbalancer: HTTPS
+loadbalancer -> webserver1
+loadbalancer -> webserver2
+webserver1 -> database: SQL
+webserver2 -> database: SQL
+webserver1 -> cache: Read/Write
+webserver2 -> cache: Read/Write
