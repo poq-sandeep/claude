@@ -1,0 +1,29 @@
+# Ardene SWYM Wishlist Flow
+
+direction: right
+
+user: Customer {
+  shape: person
+  style.fill: "#ffe0b2"
+}
+
+mobile: Mobile App {
+  style.fill: "#c8e6c9"
+}
+
+bff: BFF Backend {
+  style.fill: "#b3e5fc"
+}
+
+swym: SWYM API {
+  style.fill: "#f8bbd0"
+}
+
+user -> mobile: Browse Products
+mobile -> user: Display Products
+user -> mobile: Add to Wishlist
+mobile -> bff: Create List Request
+bff -> swym: POST /api/v3/lists/create
+swym -> bff: List Created (lid)
+bff -> mobile: Success
+mobile -> user: Item Added
