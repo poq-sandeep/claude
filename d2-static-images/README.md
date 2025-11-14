@@ -12,12 +12,12 @@ This directory contains everything needed to create, generate, and host diagram 
 d2-static-images/
 ├── d2-sources/          # Your D2 diagram source files (.d2)
 │   ├── clients/         # Client-specific diagrams (strict naming required)
-│   │   └── <clientname>-<featurename>-<diagramname>.d2
+│   │   └── <clientname>-<featurename>-<diagramname>-<version>.d2
 │   ├── example-architecture.d2
 │   └── example-simple.d2
 ├── images/              # Generated SVG files (auto-generated, committed to git)
 │   ├── clients/         # Client diagram outputs
-│   │   └── <clientname>-<featurename>-<diagramname>.svg
+│   │   └── <clientname>-<featurename>-<diagramname>-<version>.svg
 │   ├── example-architecture.svg
 │   └── example-simple.svg
 ├── generate.sh          # Automated build, commit, and push script
@@ -52,15 +52,16 @@ Place general-purpose diagrams in `d2-sources/` root:
 #### Client-Specific Diagrams
 Place client diagrams in `d2-sources/clients/` with **strict naming**:
 
-**Format:** `<clientname>-<featurename>-<diagramname>.d2`
+**Format:** `<clientname>-<featurename>-<diagramname>-<version>.d2`
 
 **Examples:**
-- `ardene-swym-integration.d2`
-- `ardene-shopify-checkout.d2`
-- `client-feature-workflow.d2`
+- `ardene-swym-integration-v1.d2`
+- `ardene-shopify-checkout-v2.d2`
+- `client-feature-workflow-v1.d2`
 
 **Requirements:**
-- Must have at least 2 hyphens (3 parts: client, feature, diagram)
+- Must have at least 3 hyphens (4 parts: client, feature, diagram, version)
+- Version format: `v1`, `v2`, `v1.0`, etc.
 - Lowercase recommended for consistency
 - Files not following this format will be **skipped** with an error
 
@@ -72,7 +73,7 @@ Place client diagrams in `d2-sources/clients/` with **strict naming**:
    nano d2-sources/my-diagram.d2
 
    # OR client-specific diagram
-   nano d2-sources/clients/ardene-swym-integration.d2
+   nano d2-sources/clients/ardene-swym-integration-v1.d2
    ```
 
 2. Write your diagram:
@@ -107,7 +108,7 @@ Place client diagrams in `d2-sources/clients/` with **strict naming**:
 The script automates the entire workflow:
 
 1. **Validation**: Checks if D2 is installed
-2. **Filename Validation**: For client diagrams, validates naming convention (`<clientname>-<featurename>-<diagramname>.d2`)
+2. **Filename Validation**: For client diagrams, validates naming convention (`<clientname>-<featurename>-<diagramname>-<version>.d2`)
 3. **Generation**: Compiles all `.d2` files to SVG with `--theme=0` (neutral theme)
    - General diagrams: `d2-sources/*.d2` → `images/*.svg`
    - Client diagrams: `d2-sources/clients/*.d2` → `images/clients/*.svg`
@@ -132,7 +133,7 @@ The script automates the entire workflow:
 Generating SVG files...
 
   Processing: d2-sources/my-diagram.d2 -> images/my-diagram.svg
-  Processing: d2-sources/clients/ardene-swym-integration.d2 -> images/clients/ardene-swym-integration.svg
+  Processing: d2-sources/clients/ardene-swym-integration-v1.d2 -> images/clients/ardene-swym-integration-v1.svg
 ✓ Generated 2 SVG file(s)
 
 Committing and pushing changes to git...
@@ -154,9 +155,9 @@ Generating SVG files...
   Processing: d2-sources/my-diagram.d2 -> images/my-diagram.svg
   ✗ SKIPPED: d2-sources/clients/invalid.d2
     Error: Invalid filename format
-    Expected: <clientname>-<featurename>-<diagramname>.d2
-    Example: ardene-swym-integration.d2
-  Processing: d2-sources/clients/ardene-swym-integration.d2 -> images/clients/ardene-swym-integration.svg
+    Expected: <clientname>-<featurename>-<diagramname>-<version>.d2
+    Example: ardene-swym-integration-v1.d2
+  Processing: d2-sources/clients/ardene-swym-integration-v1.d2 -> images/clients/ardene-swym-integration-v1.svg
 
 ✓ Generated 2 SVG file(s)
 ✗ 1 error(s) occurred
