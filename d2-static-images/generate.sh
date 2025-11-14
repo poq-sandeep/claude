@@ -96,9 +96,9 @@ if [ -f "$README_FILE" ]; then
         if [ -f "$d2_file" ]; then
             filename=$(basename "$d2_file" .d2)
 
-            # URL encode the D2 file content for playground link
+            # Base64 encode the D2 file content for playground link
             d2_content=$(cat "$d2_file")
-            encoded_content=$(printf '%s' "$d2_content" | jq -sRr @uri)
+            encoded_content=$(printf '%s' "$d2_content" | base64)
             playground_url="https://play.d2lang.com/?script=${encoded_content}"
 
             # Add the example entry
