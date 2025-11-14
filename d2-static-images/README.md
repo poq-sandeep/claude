@@ -135,15 +135,13 @@ https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/image
 
 ### Current Examples
 
-- **Architecture diagram**:
-  ```
-  https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-architecture.svg
-  ```
+- **example-architecture**:
+  - Image: `https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-architecture.svg`
+  - [Edit in D2 Playground](https://play.d2lang.com/?script=%23%20Example%20Architecture%20Diagram%0A%0Adirection%3A%20right%0A%0Auser%3A%20User%20%7B%0A%20%20shape%3A%20person%0A%20%20style.fill%3A%20%22%23ffe0b2%22%0A%7D%0A%0Aloadbalancer%3A%20Load%20Balancer%20%7B%0A%20%20shape%3A%20hexagon%0A%20%20style.fill%3A%20%22%23b3e5fc%22%0A%7D%0A%0Awebserver1%3A%20Web%20Server%201%20%7B%0A%20%20style.fill%3A%20%22%23c8e6c9%22%0A%7D%0A%0Awebserver2%3A%20Web%20Server%202%20%7B%0A%20%20style.fill%3A%20%22%23c8e6c9%22%0A%7D%0A%0Adatabase%3A%20Database%20%7B%0A%20%20shape%3A%20cylinder%0A%20%20style.fill%3A%20%22%23f8bbd0%22%0A%7D%0A%0Acache%3A%20Cache%20%7B%0A%20%20shape%3A%20cylinder%0A%20%20style.fill%3A%20%22%23fff9c4%22%0A%7D%0A%0A%23%20Connections%0Auser%20-%3E%20loadbalancer%3A%20HTTPS%0Aloadbalancer%20-%3E%20webserver1%0Aloadbalancer%20-%3E%20webserver2%0Awebserver1%20-%3E%20database%3A%20SQL%0Awebserver2%20-%3E%20database%3A%20SQL%0Awebserver1%20-%3E%20cache%3A%20Read%2FWrite%0Awebserver2%20-%3E%20cache%3A%20Read%2FWrite)
 
-- **Simple flow**:
-  ```
-  https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-simple.svg
-  ```
+- **example-simple**:
+  - Image: `https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-simple.svg`
+  - [Edit in D2 Playground](https://play.d2lang.com/?script=%23%20Simple%20Example%20Diagram%0A%0Ax%20-%3E%20y%3A%20Hello%20World%0Ay%20-%3E%20z%3A%20Response%0Az%20-%3E%20x%3A%20Complete%0A%0A%23%20Add%20some%20styling%0Ax.style.fill%3A%20%22%23e1f5ff%22%0Ay.style.fill%3A%20%22%23fff9c4%22%0Az.style.fill%3A%20%22%23f3e5f5%22)
 
 ### Using in Markdown
 
