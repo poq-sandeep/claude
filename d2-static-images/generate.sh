@@ -96,18 +96,11 @@ if [ -f "$README_FILE" ]; then
         if [ -f "$d2_file" ]; then
             filename=$(basename "$d2_file" .d2)
 
-            # Base64 encode the D2 file content for playground link
-            d2_content=$(cat "$d2_file")
-            encoded_content=$(printf '%s' "$d2_content" | base64)
-            playground_url="https://play.d2lang.com/?script=${encoded_content}"
-
-            # Add the example entry
-            echo "- **${filename}**:" >> "$temp_readme"
-            echo "  - Image: \`https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/${filename}.svg\`" >> "$temp_readme"
-            echo "  - [Edit in D2 Playground](${playground_url})" >> "$temp_readme"
-            echo "" >> "$temp_readme"
+            # Add the example entry with GitHub Pages link
+            echo "- [${filename}.svg](https://poq-sandeep.github.io/claude/d2-static-images/images/${filename}.svg)" >> "$temp_readme"
         fi
     done
+    echo "" >> "$temp_readme"
 
     # Copy the rest of the README after the examples section
     sed -n '/### Using in Markdown/,$p' "$README_FILE" >> "$temp_readme"
