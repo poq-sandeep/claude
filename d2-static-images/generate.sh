@@ -53,10 +53,26 @@ if [ ! -e "${d2_files[0]}" ]; then
     exit 0
 fi
 
+# Function to validate client file naming convention
+validate_client_filename() {
+    local filename="$1"
+    # Expected format: <clientname>-<featurename>-<diagramname>.d2
+    # Must have at least 2 hyphens to separate the 3 parts
+    local hyphen_count=$(echo "$filename" | grep -o "-" | wc -l | tr -d ' ')
+
+    if [ "$hyphen_count" -lt 2 ]; then
+        return 1
+    fi
+    return 0
+}
+
 # Generate SVGs from all D2 files
 echo -e "${BLUE}Generating SVG files...${NC}\n"
 echo "Files processed:" >> "$LOG_FILE"
 count=0
+error_count=0
+
+# Process regular D2 files in d2-sources root
 for d2_file in "$D2_SOURCE_DIR"/*.d2; do
     if [ -f "$d2_file" ]; then
         filename=$(basename "$d2_file" .d2)
@@ -70,11 +86,52 @@ for d2_file in "$D2_SOURCE_DIR"/*.d2; do
             ((count++))
         else
             echo "  ✗ FAILED: $d2_file" >> "$LOG_FILE"
+            ((error_count++))
         fi
     fi
 done
 
-echo -e "\n${GREEN}✓ Generated $count SVG file(s)${NC}\n"
+# Process client D2 files in d2-sources/clients
+if [ -d "$D2_SOURCE_DIR/clients" ]; then
+    for d2_file in "$D2_SOURCE_DIR/clients"/*.d2; do
+        if [ -f "$d2_file" ]; then
+            filename=$(basename "$d2_file" .d2)
+
+            # Validate naming convention
+            if ! validate_client_filename "$filename"; then
+                echo -e "  ${RED}✗ SKIPPED: $d2_file${NC}"
+                echo -e "    ${RED}Error: Invalid filename format${NC}"
+                echo -e "    Expected: <clientname>-<featurename>-<diagramname>.d2"
+                echo -e "    Example: ardene-swym-integration.d2"
+                echo "  ✗ SKIPPED: $d2_file - Invalid filename format (expected: <clientname>-<featurename>-<diagramname>.d2)" >> "$LOG_FILE"
+                ((error_count++))
+                continue
+            fi
+
+            output_file="$OUTPUT_DIR/clients/${filename}.svg"
+            mkdir -p "$OUTPUT_DIR/clients"
+
+            echo -e "  Processing: ${YELLOW}$d2_file${NC} -> ${GREEN}$output_file${NC}"
+
+            # Generate SVG with d2
+            if d2 "$d2_file" "$output_file" --theme=0 2>&1; then
+                echo "  ✓ $d2_file -> $output_file" >> "$LOG_FILE"
+                ((count++))
+            else
+                echo "  ✗ FAILED: $d2_file" >> "$LOG_FILE"
+                ((error_count++))
+            fi
+        fi
+    done
+fi
+
+echo -e "\n${GREEN}✓ Generated $count SVG file(s)${NC}"
+if [ "$error_count" -gt 0 ]; then
+    echo -e "${RED}✗ $error_count error(s) occurred${NC}\n"
+    echo "Total errors: $error_count" >> "$LOG_FILE"
+else
+    echo ""
+fi
 echo "Total files generated: $count" >> "$LOG_FILE"
 echo "" >> "$LOG_FILE"
 
