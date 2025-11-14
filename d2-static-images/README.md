@@ -127,21 +127,22 @@ Git push: SUCCESS
 
 ## Accessing Generated Images
 
-Once pushed to GitHub, your images are accessible via raw URLs:
+Once pushed to GitHub, your images are accessible via:
 
+**Raw GitHub URLs** (for direct embedding):
 ```
 https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/<filename>.svg
 ```
 
+**GitHub Pages URLs** (if enabled):
+```
+https://poq-sandeep.github.io/claude/d2-static-images/images/<filename>.svg
+```
+
 ### Current Examples
 
-- **example-architecture**:
-  - Image: `https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-architecture.svg`
-  - [Edit in D2 Playground](https://play.d2lang.com/?script=IyBFeGFtcGxlIEFyY2hpdGVjdHVyZSBEaWFncmFtCgpkaXJlY3Rpb246IHJpZ2h0Cgp1c2VyOiBVc2VyIHsKICBzaGFwZTogcGVyc29uCiAgc3R5bGUuZmlsbDogIiNmZmUwYjIiCn0KCmxvYWRiYWxhbmNlcjogTG9hZCBCYWxhbmNlciB7CiAgc2hhcGU6IGhleGFnb24KICBzdHlsZS5maWxsOiAiI2IzZTVmYyIKfQoKd2Vic2VydmVyMTogV2ViIFNlcnZlciAxIHsKICBzdHlsZS5maWxsOiAiI2M4ZTZjOSIKfQoKd2Vic2VydmVyMjogV2ViIFNlcnZlciAyIHsKICBzdHlsZS5maWxsOiAiI2M4ZTZjOSIKfQoKZGF0YWJhc2U6IERhdGFiYXNlIHsKICBzaGFwZTogY3lsaW5kZXIKICBzdHlsZS5maWxsOiAiI2Y4YmJkMCIKfQoKY2FjaGU6IENhY2hlIHsKICBzaGFwZTogY3lsaW5kZXIKICBzdHlsZS5maWxsOiAiI2ZmZjljNCIKfQoKIyBDb25uZWN0aW9ucwp1c2VyIC0+IGxvYWRiYWxhbmNlcjogSFRUUFMKbG9hZGJhbGFuY2VyIC0+IHdlYnNlcnZlcjEKbG9hZGJhbGFuY2VyIC0+IHdlYnNlcnZlcjIKd2Vic2VydmVyMSAtPiBkYXRhYmFzZTogU1FMCndlYnNlcnZlcjIgLT4gZGF0YWJhc2U6IFNRTAp3ZWJzZXJ2ZXIxIC0+IGNhY2hlOiBSZWFkL1dyaXRlCndlYnNlcnZlcjIgLT4gY2FjaGU6IFJlYWQvV3JpdGU=)
-
-- **example-simple**:
-  - Image: `https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-simple.svg`
-  - [Edit in D2 Playground](https://play.d2lang.com/?script=IyBTaW1wbGUgRXhhbXBsZSBEaWFncmFtCgp4IC0+IHk6IEhlbGxvIFdvcmxkCnkgLT4gejogUmVzcG9uc2UKeiAtPiB4OiBDb21wbGV0ZQoKIyBBZGQgc29tZSBzdHlsaW5nCnguc3R5bGUuZmlsbDogIiNlMWY1ZmYiCnkuc3R5bGUuZmlsbDogIiNmZmY5YzQiCnouc3R5bGUuZmlsbDogIiNmM2U1ZjUi)
+- [example-architecture.svg](https://poq-sandeep.github.io/claude/d2-static-images/images/example-architecture.svg)
+- [example-simple.svg](https://poq-sandeep.github.io/claude/d2-static-images/images/example-simple.svg)
 
 ### Using in Markdown
 
@@ -156,6 +157,22 @@ Embed images directly in README files or documentation:
 ```html
 <img src="https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/example-architecture.svg" alt="Architecture">
 ```
+
+## Testing Your Diagrams
+
+Before running `generate.sh`, you can test and preview your D2 diagrams in the **[D2 Playground](https://play.d2lang.com/)**.
+
+### How to Test:
+
+1. Open the [D2 Playground](https://play.d2lang.com/)
+2. Copy the content from your `.d2` file in `d2-sources/`
+3. Paste it into the playground editor
+4. Preview the rendered diagram in real-time
+5. Experiment with different layouts, themes, and styles
+6. Once satisfied, save your changes back to the `.d2` file
+7. Run `./generate.sh` to generate the SVG
+
+The playground provides instant feedback and helps you iterate quickly on your diagram designs before committing them to the repository.
 
 ## D2 Syntax Guide
 
