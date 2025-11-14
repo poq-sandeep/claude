@@ -11,21 +11,24 @@ This repository serves static SVG images generated from D2 diagrams (https://d2l
 **Single-Purpose Repository**: This is a specialized repository for diagram hosting, not a general application codebase.
 
 **Directory Layout**:
-- `d2-sources/` - Source .d2 files (text-based diagram definitions)
-- `images/` - Generated SVG output (committed to git)
-- `generate.sh` - Automated build and commit script
-- `generation.log` - Historical log of all generation runs with timestamps
+- `d2-static-images/` - Main project directory
+  - `d2-sources/` - Source .d2 files (text-based diagram definitions)
+  - `images/` - Generated SVG output (committed to git)
+  - `generate.sh` - Automated build and commit script
+  - `generation.log` - Historical log of all generation runs with timestamps
 
 **Build Pipeline**: The workflow is intentionally simple:
-1. Edit/add .d2 files in `d2-sources/`
-2. Run `./generate.sh` to compile all .d2 files to SVG
-3. Script auto-commits generated SVGs and log file
-4. Script auto-pushes to GitHub to make images available via URLs
+1. Navigate to `d2-static-images/` directory
+2. Edit/add .d2 files in `d2-sources/`
+3. Run `./generate.sh` to compile all .d2 files to SVG
+4. Script auto-commits generated SVGs and log file
+5. Script auto-pushes to GitHub to make images available via URLs
 
 ## Common Commands
 
 **Generate SVGs from D2 sources**:
 ```bash
+cd d2-static-images
 ./generate.sh
 ```
 This will:
@@ -54,8 +57,8 @@ d2 d2-sources/filename.d2 images/filename.svg --theme=0
 ```
 
 **Access generated images**:
-- Raw URL: `https://raw.githubusercontent.com/poq-sandeep/claude/main/images/<filename>.svg`
-- GitHub Pages (if enabled): `https://poq-sandeep.github.io/claude/images/<filename>.svg`
+- Raw URL: `https://raw.githubusercontent.com/poq-sandeep/claude/main/d2-static-images/images/<filename>.svg`
+- GitHub Pages (if enabled): `https://poq-sandeep.github.io/claude/d2-static-images/images/<filename>.svg`
 
 ## D2 Syntax Notes
 

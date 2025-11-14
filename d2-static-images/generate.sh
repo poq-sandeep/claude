@@ -78,10 +78,11 @@ echo "Total files generated: $count" >> "$LOG_FILE"
 echo "" >> "$LOG_FILE"
 
 # Git operations
-if [ -d .git ]; then
+# Check if we're in a git repository (either here or in parent)
+if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
     echo -e "${BLUE}Committing and pushing changes to git...${NC}\n"
 
-    # Add generated SVG files and log file
+    # Add generated SVG files and log file (use relative paths from repo root if needed)
     git add "$OUTPUT_DIR"/*.svg "$LOG_FILE" 2>/dev/null
 
     # Check if there are any staged changes to commit
