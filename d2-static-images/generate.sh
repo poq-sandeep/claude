@@ -56,11 +56,11 @@ fi
 # Function to validate client file naming convention
 validate_client_filename() {
     local filename="$1"
-    # Expected format: <clientname>-<featurename>-<diagramname>.d2
-    # Must have at least 2 hyphens to separate the 3 parts
+    # Expected format: <clientname>-<featurename>-<diagramname>-<version>.d2
+    # Must have at least 3 hyphens to separate the 4 parts
     local hyphen_count=$(echo "$filename" | grep -o "-" | wc -l | tr -d ' ')
 
-    if [ "$hyphen_count" -lt 2 ]; then
+    if [ "$hyphen_count" -lt 3 ]; then
         return 1
     fi
     return 0
@@ -101,9 +101,9 @@ if [ -d "$D2_SOURCE_DIR/clients" ]; then
             if ! validate_client_filename "$filename"; then
                 echo -e "  ${RED}✗ SKIPPED: $d2_file${NC}"
                 echo -e "    ${RED}Error: Invalid filename format${NC}"
-                echo -e "    Expected: <clientname>-<featurename>-<diagramname>.d2"
-                echo -e "    Example: ardene-swym-integration.d2"
-                echo "  ✗ SKIPPED: $d2_file - Invalid filename format (expected: <clientname>-<featurename>-<diagramname>.d2)" >> "$LOG_FILE"
+                echo -e "    Expected: <clientname>-<featurename>-<diagramname>-<version>.d2"
+                echo -e "    Example: ardene-swym-integration-v1.d2"
+                echo "  ✗ SKIPPED: $d2_file - Invalid filename format (expected: <clientname>-<featurename>-<diagramname>-<version>.d2)" >> "$LOG_FILE"
                 ((error_count++))
                 continue
             fi
