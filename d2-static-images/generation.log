@@ -212,3 +212,13 @@ README updated with playground links
 Git commit: SUCCESS (2025-11-14 09:06:00)
 Git push: SUCCESS
 
+========================================
+Generation Run: 2025-11-14 13:24:11
+========================================
+D2 Version: 0.7.1
+Files processed:
+  ✓ d2-sources/example-architecture.d2 -> images/example-architecture.svg
+  ✓ d2-sources/example-simple.d2 -> images/example-simple.svg
+Total files generated: 2
+
+README updated with playground links

@@ -11,9 +11,13 @@ This directory contains everything needed to create, generate, and host diagram 
 ```
 d2-static-images/
 ├── d2-sources/          # Your D2 diagram source files (.d2)
+│   ├── clients/         # Client-specific diagrams (strict naming required)
+│   │   └── <clientname>-<featurename>-<diagramname>.d2
 │   ├── example-architecture.d2
 │   └── example-simple.d2
 ├── images/              # Generated SVG files (auto-generated, committed to git)
+│   ├── clients/         # Client diagram outputs
+│   │   └── <clientname>-<featurename>-<diagramname>.svg
 │   ├── example-architecture.svg
 │   └── example-simple.svg
 ├── generate.sh          # Automated build, commit, and push script
@@ -39,11 +43,36 @@ curl -fsSL https://d2lang.com/install.sh | sh -s --
 d2 --version
 ```
 
+### File Naming Conventions
+
+#### General Diagrams
+Place general-purpose diagrams in `d2-sources/` root:
+- Any filename is acceptable (e.g., `my-diagram.d2`, `architecture.d2`)
+
+#### Client-Specific Diagrams
+Place client diagrams in `d2-sources/clients/` with **strict naming**:
+
+**Format:** `<clientname>-<featurename>-<diagramname>.d2`
+
+**Examples:**
+- `ardene-swym-integration.d2`
+- `ardene-shopify-checkout.d2`
+- `client-feature-workflow.d2`
+
+**Requirements:**
+- Must have at least 2 hyphens (3 parts: client, feature, diagram)
+- Lowercase recommended for consistency
+- Files not following this format will be **skipped** with an error
+
 ### Creating Your First Diagram
 
-1. Create a new `.d2` file in `d2-sources/`:
+1. Create a new `.d2` file:
    ```bash
+   # General diagram
    nano d2-sources/my-diagram.d2
+
+   # OR client-specific diagram
+   nano d2-sources/clients/ardene-swym-integration.d2
    ```
 
 2. Write your diagram:
@@ -78,16 +107,23 @@ d2 --version
 The script automates the entire workflow:
 
 1. **Validation**: Checks if D2 is installed
-2. **Generation**: Compiles all `.d2` files to SVG with `--theme=0` (neutral theme)
-3. **Logging**: Records timestamp, D2 version, processed files, and results to `generation.log`
-4. **Git Operations**:
+2. **Filename Validation**: For client diagrams, validates naming convention (`<clientname>-<featurename>-<diagramname>.d2`)
+3. **Generation**: Compiles all `.d2` files to SVG with `--theme=0` (neutral theme)
+   - General diagrams: `d2-sources/*.d2` → `images/*.svg`
+   - Client diagrams: `d2-sources/clients/*.d2` → `images/clients/*.svg`
+4. **Logging**: Records timestamp, D2 version, processed files, and results to `generation.log`
+5. **Git Operations**:
    - Stages generated SVG files and the log file
    - Commits with timestamped message
    - Pushes to GitHub remote automatically
-5. **Error Handling**: Logs failures and provides helpful error messages
+6. **Error Handling**:
+   - Skips client files with invalid naming
+   - Logs failures with descriptive messages
+   - Displays error count at the end
 
-#### Script Output Example
+#### Script Output Examples
 
+**Successful Generation:**
 ```
 === D2 SVG Generator ===
 
@@ -96,13 +132,34 @@ The script automates the entire workflow:
 Generating SVG files...
 
   Processing: d2-sources/my-diagram.d2 -> images/my-diagram.svg
-✓ Generated 1 SVG file(s)
+  Processing: d2-sources/clients/ardene-swym-integration.d2 -> images/clients/ardene-swym-integration.svg
+✓ Generated 2 SVG file(s)
 
 Committing and pushing changes to git...
-
 ✓ Changes committed
 Pushing to remote...
 ✓ Changes pushed to remote
+
+=== Done ===
+```
+
+**With Naming Errors:**
+```
+=== D2 SVG Generator ===
+
+✓ d2 found: 0.7.1
+
+Generating SVG files...
+
+  Processing: d2-sources/my-diagram.d2 -> images/my-diagram.svg
+  ✗ SKIPPED: d2-sources/clients/invalid.d2
+    Error: Invalid filename format
+    Expected: <clientname>-<featurename>-<diagramname>.d2
+    Example: ardene-swym-integration.d2
+  Processing: d2-sources/clients/ardene-swym-integration.d2 -> images/clients/ardene-swym-integration.svg
+
+✓ Generated 2 SVG file(s)
+✗ 1 error(s) occurred
 
 === Done ===
 ```
