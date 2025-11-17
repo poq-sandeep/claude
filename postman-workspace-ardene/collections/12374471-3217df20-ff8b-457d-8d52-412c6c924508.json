@@ -744,7 +744,77 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "12374471-ef141c4b-e62c-4fb2-bb1c-4d04dcb0588e",
+									"name": "danielarrowsmith@lazertechnologies.com",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "regid",
+													"value": "{{vol_swym_loggedin_regid}}",
+													"type": "text",
+													"uuid": "edd74a43-1e8c-4e76-8d1e-28a55f398e4c"
+												},
+												{
+													"key": "sessionid",
+													"value": "{{vol_swym_loggedin_sessionid}}",
+													"type": "text",
+													"uuid": "ef29cd54-b998-4a48-909a-79f65b679da8"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{swym_host}}/api/v3/lists/fetch-lists",
+											"host": [
+												"{{swym_host}}"
+											],
+											"path": [
+												"api",
+												"v3",
+												"lists",
+												"fetch-lists"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 17 Nov 2025 07:59:08 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\n    {\n        \"di\": \"7718c088-e155-41bd-a80b-6fef3f711a51\",\n        \"listcontents\": [\n            {\n                \"di\": \"7718c088-e155-41bd-a80b-6fef3f711a51\",\n                \"bt\": \"ArdeneDev\",\n                \"uid\": \"1eTQG59C8PKwlzBpVpuOhI1k2Gr22ZlVozzKKBXe4CU=\",\n                \"dt\": \"Super Soft Midi Dress with Slit\",\n                \"cts\": 1763149495848,\n                \"source\": \"unknown\",\n                \"empi\": 7713606631526,\n                \"cby\": \"danielarrowsmith@lazertechnologies.com\",\n                \"lid\": \"1afdf036-f4ed-40d7-bedc-949b749e63db\",\n                \"du\": \"https://ardenedev.myshopify.com/products/super-soft-midi-dress-with-slit-light-yellow?variant=43036015722598\",\n                \"pid\": \"/jLZ6PotUDfl1GqPKlNherUEGwuCit+H5ZbRUfgZTJw=\",\n                \"epi\": 43036015722598,\n                \"id\": \"857dc8f6-3a1d-4246-b1cf-98bd13ae1f23\",\n                \"uts\": 1763149495848,\n                \"_pkey\": \"1eTQG59C\",\n                \"iu\": \"https://cdn.shopify.com/s/files/1/0660/1116/8870/files/5A-AP34216-05-d979f6e4-4ee6-49da-af98-1e8f04cd63ef_620x620.webp?v=1755810798\",\n                \"_t\": 2,\n                \"uby\": \"danielarrowsmith@lazertechnologies.com\",\n                \"pr\": 24.9,\n                \"vi\": \"Yellow/XS\"\n            }\n        ],\n        \"userinfo\": {\n            \"fname\": null,\n            \"sw_mkt\": null,\n            \"last_platform_order_id\": null,\n            \"platform_mkt_consent\": {\n                \"email\": {\n                    \"state\": \"not_subscribed\",\n                    \"opt_in_level\": \"single_opt_in\",\n                    \"consent_updated_at\": null\n                },\n                \"sms\": null\n            },\n            \"uid\": \"1eTQG59C8PKwlzBpVpuOhI1k2Gr22ZlVozzKKBXe4CU=\",\n            \"m\": null,\n            \"em\": \"danielarrowsmith@lazertechnologies.com\",\n            \"cts\": 1763149483816,\n            \"state\": \"disabled\",\n            \"lname\": null,\n            \"pid\": \"/jLZ6PotUDfl1GqPKlNherUEGwuCit+H5ZbRUfgZTJw=\",\n            \"uts\": 1763366337380,\n            \"acc_mkt\": null,\n            \"ut\": null,\n            \"prefs\": {\n                \"Mediums\": {\n                    \"email\": {\n                        \"signuptime\": 1763149483794,\n                        \"acceptmarketing\": null,\n                        \"acceptsource\": \"shopify\"\n                    }\n                },\n                \"Inferred\": {\n                    \"country\": null,\n                    \"locale\": null,\n                    \"currency\": null\n                }\n            }\n        },\n        \"lty\": \"wl\",\n        \"uid\": \"1eTQG59C8PKwlzBpVpuOhI1k2Gr22ZlVozzKKBXe4CU=\",\n        \"cts\": 1763149495786,\n        \"cnt\": 1,\n        \"lname\": \"My Wishlist\",\n        \"cby\": \"danielarrowsmith@lazertechnologies.com\",\n        \"lid\": \"1afdf036-f4ed-40d7-bedc-949b749e63db\",\n        \"pid\": \"/jLZ6PotUDfl1GqPKlNherUEGwuCit+H5ZbRUfgZTJw=\",\n        \"st\": 1,\n        \"id\": \"d24d3b3f-bd03-4e5c-b48e-178df173c421\",\n        \"uts\": 1763149495786,\n        \"_pkey\": \"1eTQG59C\",\n        \"_t\": 1,\n        \"itemcmnts\": 0,\n        \"uby\": \"danielarrowsmith@lazertechnologies.com\",\n        \"lhash\": \"bXktd2lzaGxpc3Q=\",\n        \"cfor\": \"danielarrowsmith@lazertechnologies.com\"\n    }\n]"
+								}
+							]
 						},
 						{
 							"name": "04. Add to Wishlist",
