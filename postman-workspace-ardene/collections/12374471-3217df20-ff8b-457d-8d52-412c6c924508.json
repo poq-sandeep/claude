@@ -875,7 +875,97 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "12374471-6cf4fd3e-7d14-4491-81c1-f904154365dc",
+									"name": "danielarrowsmith@lazertechnologies.com",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "regid",
+													"value": "{{vol_swym_loggedin_regid}}",
+													"type": "text",
+													"uuid": "edd74a43-1e8c-4e76-8d1e-28a55f398e4c"
+												},
+												{
+													"key": "sessionid",
+													"value": "{{vol_swym_loggedin_sessionid}}",
+													"type": "text",
+													"uuid": "ef29cd54-b998-4a48-909a-79f65b679da8"
+												},
+												{
+													"key": "lid",
+													"value": "{{vol_swym_loggedin_wishlist_id}}",
+													"type": "text",
+													"uuid": "31cc5ec6-57d3-42c2-b041-db3e5bc66109"
+												},
+												{
+													"key": "a",
+													"value": "[{\"epi\":43329109917798,\"empi\":7736958845030,\"du\":\"https://ardenedev.myshopify.com/products/super-soft-midi-dress-with-slit-pink\"}]",
+													"description": "{\"epi\": \"Product Variant ID, unique per item within a list\",\n  \"empi\": \"Product ID\",\n  \"du\": \"Canonical uri of the product\",\n  \"dt\": \"Product title\",\n  \"qty\": \"Quantity\",\n  \"pr\": \"Product price\",\n  \"iu\": \"Product Image url\",\n  \"note\": \"Item level note, single line of note at the list item level\",\n  \"cprops\": {},\n  \"bt\": \"Brand name\",\n  \"ct\": \"Category/collection name\",\n  \"vi\": \"Selected variant info\",\n  \"_av\": false,\n  \"cby\": \"Created by email address\",\n  \"uby\": \"Updated by email address\",\n  \"cts\": \"Created at milliseconds\",\n  \"uts\": \"Updated at milliseconds\"\n}",
+													"type": "text",
+													"uuid": "e1e222fd-c07c-4e14-bdee-36eefa0f809c",
+													"disabled": true
+												},
+												{
+													"key": "a",
+													"value": "[{\"epi\":43341327499366,\"empi\":7740691578982,\"du\":\"https://ardenedev.myshopify.com/products/acid-wash-raptors-1995-graphic-t-shirt-black\"}]",
+													"type": "text",
+													"uuid": "9d2f364e-40a1-46e0-b7b7-f1e2857f40b5"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{swym_host}}/api/v3/lists/update-ctx",
+											"host": [
+												"{{swym_host}}"
+											],
+											"path": [
+												"api",
+												"v3",
+												"lists",
+												"update-ctx"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 17 Nov 2025 08:01:58 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json;charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"a\": [\n        {\n            \"di\": \"d1ed3abe-4198-4e4f-bb3a-613d86591ba9\",\n            \"bt\": \"Ardene\",\n            \"uid\": \"1eTQG59C8PKwlzBpVpuOhI1k2Gr22ZlVozzKKBXe4CU=\",\n            \"dt\": \"Acid Wash Raptors 1995 Graphic T-Shirt - Black\",\n            \"cts\": 1763366517322,\n            \"empi\": 7740691578982,\n            \"sku\": \"21188780\",\n            \"cby\": \"danielarrowsmith@lazertechnologies.com\",\n            \"lid\": \"1afdf036-f4ed-40d7-bedc-949b749e63db\",\n            \"du\": \"https://ardenedev.myshopify.com/products/acid-wash-raptors-1995-graphic-t-shirt-black\",\n            \"pid\": \"/jLZ6PotUDfl1GqPKlNherUEGwuCit+H5ZbRUfgZTJw=\",\n            \"epi\": 43341327499366,\n            \"uts\": 1763366517322,\n            \"_pkey\": \"1eTQG59C\",\n            \"iu\": \"https://cdn.shopify.com/s/files/1/0660/1116/8870/files/4A-AP34302-05-3bcf0eb4-648b-4f40-9287-fe4dff9b0528_4016048c-d15e-452a-9233-6ef3d42becd1_620x620.jpg?v=1758826585\",\n            \"_t\": 2,\n            \"uby\": \"danielarrowsmith@lazertechnologies.com\",\n            \"pr\": 12.95,\n            \"vi\": \"Black/S\"\n        }\n    ],\n    \"d\": [],\n    \"u\": []\n}"
+								}
+							]
 						}
 					],
 					"id": "12374471-c09d48e6-a5b4-4375-a505-b0bfb32fd47d",
