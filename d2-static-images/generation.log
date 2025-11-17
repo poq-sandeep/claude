@@ -326,3 +326,19 @@ Total errors: 1
 Total files generated: 3
 
 README updated with playground links
+Git commit: SUCCESS (2025-11-17 13:46:28)
+Git push: SUCCESS
+
+========================================
+Generation Run: 2025-11-17 13:47:53
+========================================
+D2 Version: 0.7.1
+Files processed:
+  ✓ d2-sources/example-architecture.d2 -> images/example-architecture.svg
+  ✓ d2-sources/example-simple.d2 -> images/example-simple.svg
+  ✓ d2-sources/clients/ardene-swym-wishlist-flow-v1.d2 -> images/clients/ardene-swym-wishlist-flow-v1.svg
+  ✗ FAILED: d2-sources/clients/elf-arch-integrationview-draft-v1.d2
+Total errors: 1
+Total files generated: 3
+
+README updated with playground links
