@@ -2344,7 +2344,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://uberall.com/api/store-finders/APLOifTJjDLpXnd0K1bTlQmbKKM3mt/locations?language=en&max=400&fieldMask=id&fieldMask=name&fieldMask=identifier&fieldMask=street&fieldMask=streetNo&fieldMask=streetAndNumber&fieldMask=addressExtra&fieldMask=zip&fieldMask=city&fieldMask=country&fieldMask=province&fieldMask=lat&fieldMask=lng&fieldMask=addressDisplay&fieldMask=phone&fieldMask=descriptionShort&fieldMask=descriptionLong&fieldMask=status&fieldMask=openingHours&fieldMask=specialOpeningHours&fieldMask=nameDescriptor&geo=true&countries=string&query=string&queryFields=string",
+							"raw": "https://uberall.com/api/store-finders/APLOifTJjDLpXnd0K1bTlQmbKKM3mt/locations?language=en&max=400&fieldMask=id&fieldMask=name&fieldMask=identifier&fieldMask=street&fieldMask=streetNo&fieldMask=streetAndNumber&fieldMask=addressExtra&fieldMask=zip&fieldMask=city&fieldMask=country&fieldMask=province&fieldMask=lat&fieldMask=lng&fieldMask=addressDisplay&fieldMask=phone&fieldMask=descriptionShort&fieldMask=descriptionLong&fieldMask=status&fieldMask=openingHours&fieldMask=specialOpeningHours&fieldMask=nameDescriptor&geo=true&countries=string&query=Toronto&queryFields=city",
 							"protocol": "https",
 							"host": [
 								"uberall",
@@ -2471,11 +2471,11 @@
 								},
 								{
 									"key": "query",
-									"value": "string"
+									"value": "Toronto"
 								},
 								{
 									"key": "queryFields",
-									"value": "string"
+									"value": "city"
 								},
 								{
 									"key": "radius",
@@ -2504,7 +2504,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://uberall.com/api/store-finders/APLOifTJjDLpXnd0K1bTlQmbKKM3mt/locations?language=en&max=400&fieldMask=id&fieldMask=name&fieldMask=identifier&fieldMask=street&fieldMask=streetNo&fieldMask=streetAndNumber&fieldMask=addressExtra&fieldMask=zip&fieldMask=city&fieldMask=country&fieldMask=province&fieldMask=lat&fieldMask=lng&fieldMask=addressDisplay&fieldMask=phone&fieldMask=descriptionShort&fieldMask=descriptionLong&fieldMask=status&fieldMask=openingHours&fieldMask=specialOpeningHours&fieldMask=nameDescriptor&geo=true&countries=string&query=string&queryFields=string",
+							"raw": "https://uberall.com/api/store-finders/APLOifTJjDLpXnd0K1bTlQmbKKM3mt/locations/all?language=en&max=400&fieldMask=id&fieldMask=name&fieldMask=identifier&fieldMask=street&fieldMask=streetNo&fieldMask=streetAndNumber&fieldMask=addressExtra&fieldMask=zip&fieldMask=city&fieldMask=country&fieldMask=province&fieldMask=lat&fieldMask=lng&fieldMask=addressDisplay&fieldMask=phone&fieldMask=descriptionShort&fieldMask=descriptionLong&fieldMask=status&fieldMask=openingHours&fieldMask=specialOpeningHours&fieldMask=nameDescriptor&geo=true&countries=string&query=string&queryFields=string",
 							"protocol": "https",
 							"host": [
 								"uberall",
@@ -2514,7 +2514,8 @@
 								"api",
 								"store-finders",
 								"APLOifTJjDLpXnd0K1bTlQmbKKM3mt",
-								"locations"
+								"locations",
+								"all"
 							],
 							"query": [
 								{
