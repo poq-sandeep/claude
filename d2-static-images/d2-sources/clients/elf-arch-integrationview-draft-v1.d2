@@ -1,0 +1,156 @@
+direction: right
+# title: System Context diagram for Mobile Commerce Platform
+title: {
+  label: System Context diagram for Mobile Commerce Platform - SFCC
+  link: ../shopify.svg
+  near: top-left
+  shape: text
+  style.font-size: 40
+  style.underline: true
+}
+
+customer: {
+  shape: person
+
+  label: "Customer\nA user of the mobile application"
+}
+
+ELFxPoq: {
+  label: "ELFxPoq"
+
+  PoqApp: {
+    style.stroke-dash: 3
+    label: "iOS & Android Mobile App\nProvides commerce functionality to customers"
+  }
+
+  PoqBFC: {
+    style.stroke-dash: 3
+    bff: {
+      shape: image
+      icon: https://azure.microsoft.com/svghandler/api-management/?width=600&height=315
+      label: "ELF x Poq BFC\nHandles mobile-specific API requests \nand aggregates data"
+    }
+  }
+}
+
+Third-Party Analytics Services: {
+  label: "Third-Party Analytics Services"
+
+  crm-analytics: {
+    label: "<Braze> Analytics"
+    style.stroke-dash: 3
+  }
+}
+Third-Party Cloud Services: {
+  label: "Third-Party Cloud Services"
+  style.stroke: "#666"
+  style.stroke-width: 3
+
+  crm: {
+    label: "<Braze>\nCRM"
+    style.stroke-dash: 3
+  }
+
+  loyalty: {
+    label: "Loyalty System"
+    style.stroke-dash: 3
+    ct: {
+      label: "CrowdTwist"
+      style.stroke-dash: 3
+    }
+    tone: {
+      label: "Talon.One"
+      style.stroke-dash: 3
+      style.opacity: 0
+    }
+  }
+
+  makeup: {
+    label: "<MatchMyMakeUp>"
+    style.stroke-dash: 3
+  }
+
+  bv: {
+    style.stroke-dash: 3
+    label: BazaarVoice
+    ugc: {
+      label: "<BazaarVoice Curalate UGC>\n UGC provider"
+      style.stroke-dash: 3
+    }
+    rev: {
+      label: "<BazaarVoice Reviews>\n Review provider"
+      style.stroke-dash: 3
+    }
+  }
+}
+
+ELF Services: {
+  label: "ELF Services"
+
+  integration: {
+    style.stroke-dash: 3
+    label: "ELF API\nOrchestrates communication between \nvarious clients and ELF & 3Party services"
+  }
+
+  commerce: {
+    label: Commerce system
+    style.stroke-dash: 3
+    sfcc: {
+      style.stroke-dash: 3
+      label: "Commerce <SFCC>\nSystem handling all commerce \nonline operations"
+    }
+  }
+}
+
+customer -> ELFxPoq.PoqApp.App: Uses\nHTTPS
+ELFxPoq.PoqApp.App -> ELFxPoq.PoqBFC.bff: Makes API calls to\nHTTPS/JSON
+ELFxPoq.PoqApp.App -> Third-Party Analytics Services.crm-analytics: Uses SDK\nHTTPS
+ELFxPoq.PoqApp.App -> Third-Party Cloud Services.crm: Sends customer data to\nHTTPS/JSON
+ELFxPoq.PoqBFC.bff -> ELF Services.integration: Sends loyalty-rewards/profile requests to\nHTTPS/JSON
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty: Uses loyalty-auth and retrieves loyalty-activities data from\nHTTPS/JSON
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.crm: Track Braze activity
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.makeup: Shade matching data for PDP
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.bv.ugc: Retrieve UGC content for App
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.bv.rev: Retrieve Review content for App
+ELF Services.integration -> ELF Services.commerce: Integrates with\nOCAPI API
+ELF Services.commerce -> Third-Party Cloud Services.crm: Customer profile & interactions information
+ELF Services.integration -> Third-Party Cloud Services.loyalty: Manages loyalty transactions with\nHTTPS/JSON
+
+scenarios: {
+  shopify: {
+    title.label: System Context diagram for Mobile Commerce Platform - Shopify
+    title.link: ../index.svg
+    #     (local.code -> github.dev)[0].style: {
+    #       stroke: "#ca052b"
+    #       opacity: 0.1
+    #     }
+
+    ELF Services.commerce: {
+      style.opacity: 0.1
+    }
+
+    #     github: {
+    #       dev: {
+    #         style.opacity: 0.1
+    #       }
+    #       master: {
+    #         workflows: {
+    #           style.opacity: 0.1
+    #         }
+    #         style.opacity: 0.1
+    #       }
+
+    #       (dev -> master.workflows)[0].style.opacity: 0.1
+    #       style.opacity: 0.1
+    #       style.fill: "#ca052b"
+    #     }
+
+    #     (github.master.workflows -> aws.builders)[0].style.opacity: 0.1
+
+    #     (local.code -> aws.ec2)[0]: {
+    #       style.opacity: 1
+    #       style.stroke-dash: 5
+    #       style.stroke: "#167c3c"
+    #     }
+  }
+}
