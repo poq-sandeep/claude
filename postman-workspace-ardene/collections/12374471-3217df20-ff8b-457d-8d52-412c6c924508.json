@@ -1750,7 +1750,7 @@
 			"name": "Store availability (Custom API)",
 			"item": [
 				{
-					"name": "stock-locator Copy",
+					"name": "stock-locator",
 					"item": [
 						{
 							"name": "Get store locations with stock availability",
