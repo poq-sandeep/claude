@@ -1767,28 +1767,28 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+									"raw": "{{shopify-store-tools-url}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
 									"host": [
-										"{{baseUrl}}"
+										"{{shopify-store-tools-url}}"
 									],
 									"path": [
 										"pick-up-points"
 									],
 									"query": [
 										{
-											"description": "(Required) Latitude of the location to search around",
 											"key": "lat",
-											"value": "48.85"
+											"value": "48.85",
+											"description": "(Required) Latitude of the location to search around"
 										},
 										{
-											"description": "(Required) Longitude of the location to search around",
 											"key": "lng",
-											"value": "2.35"
+											"value": "2.35",
+											"description": "(Required) Longitude of the location to search around"
 										},
 										{
-											"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
 											"key": "country_code",
-											"value": "CA"
+											"value": "CA",
+											"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")"
 										}
 									]
 								},
@@ -2073,38 +2073,38 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
 									"host": [
-										"{{baseUrl}}"
+										"{{shopify-store-tools-url}}"
 									],
 									"path": [
 										"stock-locator"
 									],
 									"query": [
 										{
-											"description": "(Required) SKU to check availability for",
 											"key": "sku",
-											"value": "21223709"
+											"value": "21223709",
+											"description": "(Required) SKU to check availability for"
 										},
 										{
-											"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
 											"key": "q",
-											"value": "toronto"
+											"value": "toronto",
+											"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n"
 										},
 										{
-											"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
 											"key": "country_code",
-											"value": "CA"
+											"value": "CA",
+											"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")"
 										},
 										{
-											"description": "Latitude of user/address for proximity search (must be used with lng)",
 											"key": "lat",
-											"value": "43.6532"
+											"value": "43.6532",
+											"description": "Latitude of user/address for proximity search (must be used with lng)"
 										},
 										{
-											"description": "Longitude of user/address for proximity search (must be used with lat)",
 											"key": "lng",
-											"value": "-79.3832"
+											"value": "-79.3832",
+											"description": "Longitude of user/address for proximity search (must be used with lat)"
 										}
 									]
 								},
