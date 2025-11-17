@@ -1747,6 +1747,12 @@
 			"description": "SWYM Lists API integration for managing customer wishlists and custom lists. This API enables creating, updating, and managing lists with custom properties, notes, and descriptions. Use these endpoints to integrate SWYM's list management functionality into your application."
 		},
 		{
+			"name": "Store availability (Custom API)",
+			"item": [],
+			"id": "12374471-d015a4bd-d6a1-4851-a482-b98d2783a8ab",
+			"description": "Custom API endpoints for store availability and inventory management."
+		},
+		{
 			"name": "Archive",
 			"item": [
 				{
