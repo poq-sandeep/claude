@@ -783,7 +783,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Date",
@@ -934,7 +934,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Date",
@@ -1748,7 +1748,741 @@
 		},
 		{
 			"name": "Store availability (Custom API)",
-			"item": [],
+			"item": [
+				{
+					"name": "stock-locator Copy",
+					"item": [
+						{
+							"name": "Get store locations with stock availability",
+							"id": "12374471-a67d2cfb-0a6c-47e8-b530-9251716b552f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stock-locator"
+									],
+									"query": [
+										{
+											"description": "(Required) SKU to check availability for",
+											"key": "sku",
+											"value": "21223709"
+										},
+										{
+											"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+											"key": "q",
+											"value": "toronto"
+										},
+										{
+											"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+											"key": "country_code",
+											"value": "CA"
+										},
+										{
+											"description": "Latitude of user/address for proximity search (must be used with lng)",
+											"key": "lat",
+											"value": "43.6532"
+										},
+										{
+											"description": "Longitude of user/address for proximity search (must be used with lat)",
+											"key": "lng",
+											"value": "-79.3832"
+										}
+									]
+								},
+								"description": "Search for store locations and check stock availability for a specific SKU.\nSupports proximity search via lat/lng, country filtering, and free-text search.\n"
+							},
+							"response": [
+								{
+									"id": "12374471-e5c807d6-f9d1-4ae7-861c-e6a683b5873c",
+									"name": "Successful response with locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"locations\": [\n    {\n      \"code\": \"2561679\",\n      \"address\": {\n        \"address1\": \"1980 Saint Clair Avenue West\",\n        \"address2\": \"#A114\",\n        \"city\": \"Toronto\",\n        \"zip\": \"M6N 0A3\",\n        \"country_code\": \"CA\",\n        \"latitude\": 43.67270296,\n        \"longitude\": -79.47073431\n      },\n      \"details\": {\n        \"name\": \"Ardene\",\n        \"description\": null,\n        \"business_hours\": [\n          {\n            \"day\": \"MONDAY\",\n            \"periods\": [\n              {\n                \"closing_time\": \"21:00:00\",\n                \"opening_time\": \"10:00:00\"\n              }\n            ]\n          }\n        ],\n        \"open_24_hours\": false\n      },\n      \"attributes\": [],\n      \"icon_url\": null\n    }\n  ]\n}"
+								},
+								{
+									"id": "12374471-a0ed53c2-07d9-4fdf-9ecb-d613cff033e2",
+									"name": "Bad request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								},
+								{
+									"id": "12374471-52a072e1-a8aa-4a40-a278-24ec3c743ab5",
+									"name": "Authentication failed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"success\": false,\n  \"error\": \"Authentication failed\"\n}"
+								},
+								{
+									"id": "12374471-11be1904-77c9-4c74-951b-98929cc7f634",
+									"name": "Resource not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								},
+								{
+									"id": "12374471-5c580652-f4b4-4c65-b0fc-d933568b3542",
+									"name": "Validation error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								},
+								{
+									"id": "12374471-f7fb1929-2927-4f34-ae05-07dd54c3c057",
+									"name": "Internal server error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"description": "(Required) SKU to check availability for",
+													"key": "sku",
+													"value": "21223709"
+												},
+												{
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n",
+													"key": "q",
+													"value": "toronto"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												},
+												{
+													"description": "Latitude of user/address for proximity search (must be used with lng)",
+													"key": "lat",
+													"value": "43.6532"
+												},
+												{
+													"description": "Longitude of user/address for proximity search (must be used with lat)",
+													"key": "lng",
+													"value": "-79.3832"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "12374471-0ca08166-1a5f-45ed-94e2-69a42366e701"
+				},
+				{
+					"name": "pick-up-points Copy",
+					"item": [
+						{
+							"name": "Get pick-up point locations",
+							"id": "12374471-727a13e8-f07d-43ab-9987-6a2bfd5a3119",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pick-up-points"
+									],
+									"query": [
+										{
+											"description": "(Required) Latitude of the location to search around",
+											"key": "lat",
+											"value": "48.85"
+										},
+										{
+											"description": "(Required) Longitude of the location to search around",
+											"key": "lng",
+											"value": "2.35"
+										},
+										{
+											"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+											"key": "country_code",
+											"value": "CA"
+										}
+									]
+								},
+								"description": "Find pick-up point locations based on geographic coordinates.\nReturns stores that can serve as pick-up points for orders.\n"
+							},
+							"response": [
+								{
+									"id": "12374471-6fbf40d3-66d7-42af-8862-feef4af3097d",
+									"name": "Successful response with pick-up point locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"description": "(Required) Latitude of the location to search around",
+													"key": "lat",
+													"value": "48.85"
+												},
+												{
+													"description": "(Required) Longitude of the location to search around",
+													"key": "lng",
+													"value": "2.35"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"locations\": [\n    {\n      \"code\": \"2561954\",\n      \"address\": {\n        \"address1\": \"48 Kenmount Road\",\n        \"address2\": \"250\",\n        \"city\": \"St. John's\",\n        \"zip\": \"A1B 1W3\",\n        \"country_code\": \"CA\",\n        \"latitude\": 47.5606038,\n        \"longitude\": -52.7541317\n      },\n      \"details\": {\n        \"name\": \"Ardene\",\n        \"description\": null,\n        \"business_hours\": [\n          {\n            \"day\": \"MONDAY\",\n            \"periods\": [\n              {\n                \"closing_time\": \"21:00:00\",\n                \"opening_time\": \"09:30:00\"\n              }\n            ]\n          }\n        ],\n        \"open_24_hours\": false\n      },\n      \"attributes\": [],\n      \"icon_url\": null\n    }\n  ]\n}"
+								},
+								{
+									"id": "12374471-4015c601-7b55-45cd-a329-b21e06ba8451",
+									"name": "Bad request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"description": "(Required) Latitude of the location to search around",
+													"key": "lat",
+													"value": "48.85"
+												},
+												{
+													"description": "(Required) Longitude of the location to search around",
+													"key": "lng",
+													"value": "2.35"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								},
+								{
+									"id": "12374471-d28972a7-be46-4dfd-a647-b582dffe1494",
+									"name": "Authentication failed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"description": "(Required) Latitude of the location to search around",
+													"key": "lat",
+													"value": "48.85"
+												},
+												{
+													"description": "(Required) Longitude of the location to search around",
+													"key": "lng",
+													"value": "2.35"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"success\": false,\n  \"error\": \"Authentication failed\"\n}"
+								},
+								{
+									"id": "12374471-cc6cc706-3430-4e32-83c1-c7a7f7c5493b",
+									"name": "Validation error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"description": "(Required) Latitude of the location to search around",
+													"key": "lat",
+													"value": "48.85"
+												},
+												{
+													"description": "(Required) Longitude of the location to search around",
+													"key": "lng",
+													"value": "2.35"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												}
+											]
+										}
+									},
+									"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								},
+								{
+									"id": "12374471-d3144993-3538-4ed5-8280-0f3451cdf6d2",
+									"name": "Internal server error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"description": "(Required) Latitude of the location to search around",
+													"key": "lat",
+													"value": "48.85"
+												},
+												{
+													"description": "(Required) Longitude of the location to search around",
+													"key": "lng",
+													"value": "2.35"
+												},
+												{
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")",
+													"key": "country_code",
+													"value": "CA"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid query parameters\"\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "12374471-f51dd91d-dd9e-4979-8f8b-61b2411e8475"
+				}
+			],
 			"id": "12374471-d015a4bd-d6a1-4851-a482-b98d2783a8ab",
 			"description": "Custom API endpoints for store availability and inventory management."
 		},
