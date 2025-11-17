@@ -3030,6 +3030,11 @@
 			],
 			"id": "12374471-ec5aa417-6faa-43b2-b18d-04b98a5de28b",
 			"description": "SWYM Lists API integration for managing customer wishlists and custom lists. This API enables creating, updating, and managing lists with custom properties, notes, and descriptions. Use these endpoints to integrate SWYM's list management functionality into your application."
+		},
+		{
+			"name": "Archive",
+			"item": [],
+			"id": "12374471-c9eb8518-8247-4b30-bd20-02c3fdd57958"
 		}
 	],
 	"event": [
