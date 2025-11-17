@@ -851,7 +851,14 @@
 											"value": "[{\"epi\":43329109917798,\"empi\":7736958845030,\"du\":\"https://ardenedev.myshopify.com/products/super-soft-midi-dress-with-slit-pink\"}]",
 											"description": "{\"epi\": \"Product Variant ID, unique per item within a list\",\n  \"empi\": \"Product ID\",\n  \"du\": \"Canonical uri of the product\",\n  \"dt\": \"Product title\",\n  \"qty\": \"Quantity\",\n  \"pr\": \"Product price\",\n  \"iu\": \"Product Image url\",\n  \"note\": \"Item level note, single line of note at the list item level\",\n  \"cprops\": {},\n  \"bt\": \"Brand name\",\n  \"ct\": \"Category/collection name\",\n  \"vi\": \"Selected variant info\",\n  \"_av\": false,\n  \"cby\": \"Created by email address\",\n  \"uby\": \"Updated by email address\",\n  \"cts\": \"Created at milliseconds\",\n  \"uts\": \"Updated at milliseconds\"\n}",
 											"type": "text",
-											"uuid": "e1e222fd-c07c-4e14-bdee-36eefa0f809c"
+											"uuid": "e1e222fd-c07c-4e14-bdee-36eefa0f809c",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "[{\"epi\":43341327499366,\"empi\":7740691578982,\"du\":\"https://ardenedev.myshopify.com/products/acid-wash-raptors-1995-graphic-t-shirt-black\"}]",
+											"type": "text",
+											"uuid": "9d2f364e-40a1-46e0-b7b7-f1e2857f40b5"
 										}
 									]
 								},
