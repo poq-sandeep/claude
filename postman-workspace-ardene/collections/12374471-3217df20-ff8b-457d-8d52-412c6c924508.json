@@ -2484,7 +2484,43 @@
 				}
 			],
 			"id": "12374471-d015a4bd-d6a1-4851-a482-b98d2783a8ab",
-			"description": "Custom API endpoints for store availability and inventory management."
+			"description": "Custom API endpoints for store availability and inventory management.",
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "key",
+						"value": "x-store-front-access",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0814119e-b914-4802-a297-fa45d4f8bcda",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "93ac876c-0106-48d9-acbf-07447ee1a396",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Archive",
