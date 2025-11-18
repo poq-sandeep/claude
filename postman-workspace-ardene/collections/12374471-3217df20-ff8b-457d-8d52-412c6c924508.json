@@ -2531,55 +2531,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "New Request Copy",
-					"id": "12374471-495d14cd-05e6-4f47-a11b-d7c37895c1d6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://ardene-locations-services-production.up.railway.app/apps/store-tools/stock-locator?api_key=7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f&lat=48.85&lng=2.35&sku=21223709&shop=ardenedev.myshopify.com",
-							"protocol": "http",
-							"host": [
-								"ardene-locations-services-production",
-								"up",
-								"railway",
-								"app"
-							],
-							"path": [
-								"apps",
-								"store-tools",
-								"stock-locator"
-							],
-							"query": [
-								{
-									"key": "api_key",
-									"value": "7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f"
-								},
-								{
-									"key": "lat",
-									"value": "48.85"
-								},
-								{
-									"key": "lng",
-									"value": "2.35"
-								},
-								{
-									"key": "sku",
-									"value": "21223709"
-								},
-								{
-									"key": "shop",
-									"value": "ardenedev.myshopify.com"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "12374471-d015a4bd-d6a1-4851-a482-b98d2783a8ab",
