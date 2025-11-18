@@ -109,7 +109,7 @@ The script automates the entire workflow:
 
 1. **Validation**: Checks if D2 is installed
 2. **Filename Validation**: For client diagrams, validates naming convention (`<clientname>-<featurename>-<diagramname>-<version>.d2`)
-3. **Generation**: Compiles all `.d2` files to SVG with `--theme=0` (neutral theme)
+3. **Generation**: Compiles all `.d2` files to SVG with `--theme=0` (neutral theme) and `--layout=elk` (ELK layout engine)
    - General diagrams: `d2-sources/*.d2` → `images/*.svg`
    - Client diagrams: `d2-sources/clients/*.d2` → `images/clients/*.svg`
 4. **Logging**: Records timestamp, D2 version, processed files, and results to `generation.log`
@@ -296,17 +296,22 @@ user -> server  # Inline comment
 If you want to generate SVGs without committing:
 
 ```bash
-d2 d2-sources/my-diagram.d2 images/my-diagram.svg --theme=0
+d2 d2-sources/my-diagram.d2 images/my-diagram.svg --theme=0 --layout=elk
 ```
 
-### Using Different Themes
+### Using Different Themes or Layouts
 
-The script uses `--theme=0` (neutral), but you can manually generate with other themes:
+The script uses `--theme=0` (neutral) and `--layout=elk` (ELK layout engine), but you can manually generate with other options:
 
 ```bash
-# Theme options: 0-8
-d2 d2-sources/my-diagram.d2 images/my-diagram.svg --theme=3
+# Different theme (options: 0-8)
+d2 d2-sources/my-diagram.d2 images/my-diagram.svg --theme=3 --layout=elk
+
+# Different layout engine (options: dagre, elk)
+d2 d2-sources/my-diagram.d2 images/my-diagram.svg --theme=0 --layout=dagre
 ```
+
+**Note**: The ELK layout engine generally provides better automatic layout for complex diagrams compared to the default dagre engine.
 
 ### Batch Processing
 

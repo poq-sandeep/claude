@@ -80,8 +80,8 @@ for d2_file in "$D2_SOURCE_DIR"/*.d2; do
 
         echo -e "  Processing: ${YELLOW}$d2_file${NC} -> ${GREEN}$output_file${NC}"
 
-        # Generate SVG with d2
-        if d2 "$d2_file" "$output_file" --theme=0 2>&1; then
+        # Generate SVG with d2 using ELK layout engine
+        if d2 "$d2_file" "$output_file" --theme=0 --layout=elk 2>&1; then
             echo "  ✓ $d2_file -> $output_file" >> "$LOG_FILE"
             ((count++))
         else
@@ -113,8 +113,8 @@ if [ -d "$D2_SOURCE_DIR/clients" ]; then
 
             echo -e "  Processing: ${YELLOW}$d2_file${NC} -> ${GREEN}$output_file${NC}"
 
-            # Generate SVG with d2
-            if d2 "$d2_file" "$output_file" --theme=0 2>&1; then
+            # Generate SVG with d2 using ELK layout engine
+            if d2 "$d2_file" "$output_file" --theme=0 --layout=elk 2>&1; then
                 echo "  ✓ $d2_file -> $output_file" >> "$LOG_FILE"
                 ((count++))
             else
