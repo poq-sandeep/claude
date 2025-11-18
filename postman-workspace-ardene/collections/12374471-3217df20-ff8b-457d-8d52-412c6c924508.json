@@ -2540,12 +2540,12 @@
 				"apikey": [
 					{
 						"key": "value",
-						"value": "{{shopify-storefront-api-access-token}}",
+						"value": "7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f",
 						"type": "string"
 					},
 					{
 						"key": "key",
-						"value": "X-Shopify-Storefront-Access-Token",
+						"value": "api_key",
 						"type": "string"
 					}
 				]
@@ -2554,7 +2554,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "be01affc-62ea-4209-a2b9-490fa9bfda0a",
+						"id": "e2015809-94e2-4d64-954e-3f369ad8c423",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
@@ -2566,7 +2566,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ad2b1461-afb5-4bba-aeb0-97ea46d8445e",
+						"id": "d6c23383-10b9-403f-88bf-ce5d326720ed",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
