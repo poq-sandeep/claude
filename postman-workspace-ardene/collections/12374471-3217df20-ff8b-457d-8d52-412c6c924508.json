@@ -2073,7 +2073,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832",
+									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop=ardenedev.myshopify.com",
 									"host": [
 										"{{shopify-store-tools-url}}"
 									],
@@ -2105,6 +2105,11 @@
 											"key": "lng",
 											"value": "-79.3832",
 											"description": "Longitude of user/address for proximity search (must be used with lat)"
+										},
+										{
+											"key": "shop",
+											"value": "ardenedev.myshopify.com",
+											"type": "text"
 										}
 									]
 								},
