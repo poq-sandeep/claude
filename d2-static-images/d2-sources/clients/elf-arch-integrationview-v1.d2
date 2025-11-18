@@ -1,4 +1,4 @@
-direction: right
+# direction: right
 # title: System Context diagram for Mobile Commerce Platform
 title: {
   label: System Context diagram for Mobile Commerce Platform - SFCC
@@ -11,12 +11,13 @@ title: {
 
 customer: {
   shape: person
-
   label: "Customer\nA user of the mobile application"
+  width: 130
 }
 
 ELFxPoq: {
   label: "ELFxPoq"
+  height: 700
 
   PoqApp: {
     style.stroke-dash: 3
@@ -26,8 +27,8 @@ ELFxPoq: {
   PoqBFC: {
     style.stroke-dash: 3
     bff: {
-      shape: image
-      icon: https://azure.microsoft.com/svghandler/api-management/?width=600&height=315
+      # shape: image
+      # icon: https://azure.microsoft.com/svghandler/api-management/?width=600&height=315
       label: "ELF x Poq BFC\nHandles mobile-specific API requests \nand aggregates data"
     }
   }
@@ -38,7 +39,7 @@ Third-Party Analytics Services: {
 
   crm-analytics: {
     label: "<Braze> Analytics"
-    style.stroke-dash: 3
+    # style.stroke-dash: 3
   }
 }
 Third-Party Cloud Services: {
@@ -48,7 +49,7 @@ Third-Party Cloud Services: {
 
   crm: {
     label: "<Braze>\nCRM"
-    style.stroke-dash: 3
+    # style.stroke-dash: 3
   }
 
   loyalty: {
@@ -56,18 +57,13 @@ Third-Party Cloud Services: {
     style.stroke-dash: 3
     ct: {
       label: "CrowdTwist"
-      style.stroke-dash: 3
-    }
-    tone: {
-      label: "Talon.One"
-      style.stroke-dash: 3
-      style.opacity: 0
+      # style.stroke-dash: 3
     }
   }
 
   makeup: {
     label: "<MatchMyMakeUp>"
-    style.stroke-dash: 3
+    # style.stroke-dash: 3
   }
 
   bv: {
@@ -75,11 +71,11 @@ Third-Party Cloud Services: {
     label: BazaarVoice
     ugc: {
       label: "<BazaarVoice Curalate UGC>\n UGC provider"
-      style.stroke-dash: 3
+      # style.stroke-dash: 3
     }
     rev: {
       label: "<BazaarVoice Reviews>\n Review provider"
-      style.stroke-dash: 3
+      # style.stroke-dash: 3
     }
   }
 }
@@ -96,7 +92,6 @@ ELF Services: {
     label: Commerce system
     style.stroke-dash: 3
     sfcc: {
-      style.stroke-dash: 3
       label: "Commerce <SFCC>\nSystem handling all commerce \nonline operations"
     }
   }
@@ -107,7 +102,9 @@ ELFxPoq.PoqApp.App -> ELFxPoq.PoqBFC.bff: Makes API calls to\nHTTPS/JSON
 ELFxPoq.PoqApp.App -> Third-Party Analytics Services.crm-analytics: Uses SDK\nHTTPS
 ELFxPoq.PoqApp.App -> Third-Party Cloud Services.crm: Sends customer data to\nHTTPS/JSON
 ELFxPoq.PoqBFC.bff -> ELF Services.integration: Sends loyalty-rewards/profile requests to\nHTTPS/JSON
-ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty: Uses loyalty-auth and retrieves loyalty-activities data from\nHTTPS/JSON
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty: Uses loyalty-auth and \nretrieves loyalty-activities data from\nHTTPS/JSON
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty: Receipt upload \n(upload and receipt-history)
+ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty: Track loyalty activity
 ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.crm: Track Braze activity
 ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.makeup: Shade matching data for PDP
 ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.bv.ugc: Retrieve UGC content for App
@@ -116,41 +113,63 @@ ELF Services.integration -> ELF Services.commerce: Integrates with\nOCAPI API
 ELF Services.commerce -> Third-Party Cloud Services.crm: Customer profile & interactions information
 ELF Services.integration -> Third-Party Cloud Services.loyalty: Manages loyalty transactions with\nHTTPS/JSON
 
+# Scenario testing
+
 scenarios: {
   shopify: {
     title.label: System Context diagram for Mobile Commerce Platform - Shopify
     title.link: ./index.svg
-    #     (local.code -> github.dev)[0].style: {
-    #       stroke: "#ca052b"
-    #       opacity: 0.1
-    #     }
 
-    ELF Services.commerce: {
-      style.opacity: 0.1
+    (ELFxPoq.PoqBFC.bff -> Third-Party Cloud Services.loyalty)[*].style: {
+      stroke: "#ca052b"
+      stroke-width: 4
+      # font-size: 40
+      font-color: "#ca052b"
+      bold: true
     }
 
-    #     github: {
-    #       dev: {
-    #         style.opacity: 0.1
-    #       }
-    #       master: {
-    #         workflows: {
-    #           style.opacity: 0.1
-    #         }
-    #         style.opacity: 0.1
-    #       }
+    ELF Services.commerce.sfcc: {
+      label: "Commerce <Shopify>\nSystem handling all commerce \nonline operations"
+      style: {
+        stroke: "#ca052b"
+        stroke-width: 4
+      }
+    }
 
-    #       (dev -> master.workflows)[0].style.opacity: 0.1
-    #       style.opacity: 0.1
-    #       style.fill: "#ca052b"
-    #     }
+    Third-Party Cloud Services.loyalty.ct: {
+      label: "Talon.One"
+      style: {
+        stroke: "#ca052b"
+        stroke-width: 4
+      }
+    }
 
-    #     (github.master.workflows -> aws.builders)[0].style.opacity: 0.1
+    changes: {
+      shape: text
+      near: bottom-right
+      label: |md
+        ## Changes in Shopify Scenario
 
-    #     (local.code -> aws.ec2)[0]: {
-    #       style.opacity: 1
-    #       style.stroke-dash: 5
-    #       style.stroke: "#167c3c"
-    #     }
+        ### Commerce Platform
+        - **Component**: ELF Services → Commerce
+        - **Change**: SFCC → **Shopify**
+        - **Impact**: Commerce system implementation
+
+        ### Loyalty System
+        - **Component**: Third-Party Cloud Services → Loyalty
+        - **Change**: CrowdTwist → **Talon.One**
+        - **Affected Connectors**:
+          - BFF → Loyalty: Loyalty-auth and retrieve activities
+          - BFF → Loyalty: Receipt upload (upload and history)
+          - BFF → Loyalty: Track loyalty activity
+          - ELF API → Loyalty: Manage loyalty transactions
+      |
+      style: {
+        font-size: 14
+        fill: "#fffae6"
+        stroke: "#ca052b"
+        stroke-width: 2
+      }
+    }
   }
 }
