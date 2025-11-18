@@ -2073,7 +2073,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop=ardenedev.myshopify.com",
+									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop={{shopify-shop-id}}",
 									"host": [
 										"{{shopify-store-tools-url}}"
 									],
@@ -2108,8 +2108,7 @@
 										},
 										{
 											"key": "shop",
-											"value": "ardenedev.myshopify.com",
-											"type": "text"
+											"value": "{{shopify-shop-id}}"
 										}
 									]
 								},
