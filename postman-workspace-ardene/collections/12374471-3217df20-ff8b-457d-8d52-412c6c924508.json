@@ -2540,7 +2540,12 @@
 				"apikey": [
 					{
 						"key": "value",
-						"value": "{{tmp}}",
+						"value": "{{shopify-store-tools-api-key}}",
+						"type": "string"
+					},
+					{
+						"key": "in",
+						"value": "query",
 						"type": "string"
 					},
 					{
@@ -2554,7 +2559,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "7c841fa0-043f-4e8f-b4f7-eb7dc842dd72",
+						"id": "c32247dd-4acc-4362-bdb4-4d1c099568b2",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
@@ -2566,7 +2571,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5c3010e0-2640-41e6-9e67-5ef286205dc9",
+						"id": "25e8a418-f98d-4144-85c5-9fc20cf9f215",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
