@@ -2492,7 +2492,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://ardene-locations-services-production.up.railway.app/apps/store-tools/stock-locator/pick-up-points?api_key=7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f",
+							"raw": "http://ardene-locations-services-production.up.railway.app/apps/store-tools/stock-locator?api_key=7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f&lat=48.85&lng=2.35&sku=21223709",
 							"protocol": "http",
 							"host": [
 								"ardene-locations-services-production",
@@ -2503,13 +2503,24 @@
 							"path": [
 								"apps",
 								"store-tools",
-								"stock-locator",
-								"pick-up-points"
+								"stock-locator"
 							],
 							"query": [
 								{
 									"key": "api_key",
 									"value": "7e2ac91f84d3b65c0af19d72e843b5a0c73ed968f21b4ca6580de39a761cb05f"
+								},
+								{
+									"key": "lat",
+									"value": "48.85"
+								},
+								{
+									"key": "lng",
+									"value": "2.35"
+								},
+								{
+									"key": "sku",
+									"value": "21223709"
 								}
 							]
 						}
