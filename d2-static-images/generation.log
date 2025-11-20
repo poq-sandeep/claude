@@ -552,3 +552,20 @@ Files processed:
 Total files generated: 4
 
 README updated with playground links
+Git commit: SUCCESS (2025-11-18 17:05:46)
+Git push: SUCCESS
+
+========================================
+Generation Run: 2025-11-20 11:39:59
+========================================
+D2 Version: 0.7.1
+Files processed:
+  ✓ d2-sources/example-architecture.d2 -> images/example-architecture.svg
+  ✓ d2-sources/example-simple.d2 -> images/example-simple.svg
+  ✓ d2-sources/clients/ardene-swym-wishlist-flow-v1.d2 -> images/clients/ardene-swym-wishlist-flow-v1.svg
+  ✗ FAILED: d2-sources/clients/elf-arch-integrationview-v1.d2
+  ✗ SKIPPED: d2-sources/clients/poqps-finance-reconciliation.d2 - Invalid filename format (expected: <clientname>-<featurename>-<diagramname>-<version>.d2)
+Total errors: 2
+Total files generated: 3
+
+README updated with playground links
