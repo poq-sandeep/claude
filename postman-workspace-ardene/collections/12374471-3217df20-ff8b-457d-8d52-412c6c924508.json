@@ -3890,10 +3890,10 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\"api_key\":\"945fd9e2-5922-4249-a9d9-92e8291d1872\",\"app_version\":\"27.3.0\",\"app_version_code\":\"27.3.0.0\",\"device_id\":\"89075351-82BD-4B5A-B041-7D38DC7E6852\",\"placements\":[{\"id\":\"app-pdp\"},{\"id\":\"p0-homepage-cos\"},{\"id\":\"p1-homepage-skin\"},{\"id\":\"my-account\"},{\"id\":\"app-cart\"},{\"id\":\"p0-homepage-skin\"},{\"id\":\"app-cart-bottom\"},{\"id\":\"p1-homepage-cos\"},{\"id\":\"app-pdp-top\"},{\"id\":\"app-pdp-bottom\"},{\"id\":\"app-cart-top\"}],\"sdk_version\":\"12.0.3\",\"time\":1763726019.4405088,\"user_id\":\"test3@poq.com\"}",
+											"raw": "{\n    \"api_key\": \"0442b2ab-5aa5-47c5-b6a4-1daa0fd15052\",\n    \"app_version\": \"27.3.0\",\n    \"app_version_code\": \"27.3.0.0\",\n    \"device_id\": \"89075351-82BD-4B5A-B041-7D38DC7E6852\",\n    \"placements\": [\n        {\n            \"id\": \"app-pdp\"\n        },\n        {\n            \"id\": \"p0-homepage-cos\"\n        },\n        {\n            \"id\": \"p1-homepage-skin\"\n        },\n        {\n            \"id\": \"my-account\"\n        },\n        {\n            \"id\": \"app-cart\"\n        },\n        {\n            \"id\": \"p0-homepage-skin\"\n        },\n        {\n            \"id\": \"app-cart-bottom\"\n        },\n        {\n            \"id\": \"p1-homepage-cos\"\n        },\n        {\n            \"id\": \"app-pdp-top\"\n        },\n        {\n            \"id\": \"app-pdp-bottom\"\n        },\n        {\n            \"id\": \"app-cart-top\"\n        }\n    ],\n    \"sdk_version\": \"12.0.3\",\n    \"time\": 1763726019.4405088,\n    \"user_id\": \"test3@poq.com\"\n}",
 											"options": {
 												"raw": {
-													"language": "text"
+													"language": "json"
 												}
 											}
 										},
