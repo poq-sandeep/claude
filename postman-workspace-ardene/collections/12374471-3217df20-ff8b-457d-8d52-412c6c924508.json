@@ -3861,7 +3861,7 @@
 											},
 											{
 												"key": "braze-sync-retry-count",
-												"value": "0"
+												"value": "2"
 											},
 											{
 												"key": "accept-language",
