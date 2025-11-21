@@ -3918,7 +3918,174 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "12374471-754c4d33-d40f-4cb2-b71a-8b2a870ab963",
+											"name": "Dev Banner Sync",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Host",
+														"value": "sdk.iad-07.braze.com"
+													},
+													{
+														"key": "content-type",
+														"value": "application/json"
+													},
+													{
+														"key": "x-braze-req-attempt",
+														"value": "1"
+													},
+													{
+														"key": "accept",
+														"value": "*/*"
+													},
+													{
+														"key": "x-braze-datarequest",
+														"value": "true"
+													},
+													{
+														"key": "braze-sync-retry-count",
+														"value": "2"
+													},
+													{
+														"key": "accept-language",
+														"value": "en-CA,en-US;q=0.9,en;q=0.8"
+													},
+													{
+														"key": "x-braze-last-req-ms-ago",
+														"value": "7200000"
+													},
+													{
+														"key": "user-agent",
+														"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+													},
+													{
+														"key": "x-braze-req-tokens-remaining",
+														"value": "28"
+													},
+													{
+														"key": "x-braze-contentcardsrequest",
+														"value": "true"
+													},
+													{
+														"key": "x-braze-ept-req-tokens-remaining",
+														"value": "4"
+													},
+													{
+														"key": "x-braze-api-key",
+														"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+													"protocol": "https",
+													"host": [
+														"sdk",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"api",
+														"v3",
+														"content_cards",
+														"sync"
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 21 Nov 2025 12:56:52 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "CF-Ray",
+													"value": "9a20597c9ddc9425-LHR"
+												},
+												{
+													"key": "CF-Cache-Status",
+													"value": "DYNAMIC"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "max-age=0, private, must-revalidate"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"e9369115939947508698eb9df9198225\""
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin,Accept-Encoding"
+												},
+												{
+													"key": "x-ratelimit-limit",
+													"value": "500.0"
+												},
+												{
+													"key": "x-ratelimit-remaining",
+													"value": "499.0"
+												},
+												{
+													"key": "x-ratelimit-reset",
+													"value": "1763729814"
+												},
+												{
+													"key": "x-request-id",
+													"value": "89a9888c-3dc0-49ad-a887-4185410b770d"
+												},
+												{
+													"key": "x-runtime",
+													"value": "0.134781"
+												},
+												{
+													"key": "Server",
+													"value": "cloudflare"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9NDgxNWVjY2QtMWRiMi00MGU5LWExNjUtNzc4NDQwMmZjN2YxJmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNS0xMS0yMVQxMiUzQTU2JTNBMjAuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1763729783,\n            \"ea\": 1763988983,\n            \"e\": null,\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        }\n    ],\n    \"last_full_sync_at\": 1763729812,\n    \"last_card_updated_at\": 1763729786,\n    \"full_sync\": true\n}"
+										}
+									]
 								},
 								{
 									"name": "ELF - banners sample",
@@ -4053,6 +4220,11 @@
 								}
 							],
 							"id": "12374471-4642d917-3fec-4afd-b2a6-f4efaa9c0036"
+						},
+						{
+							"name": "New Folder",
+							"item": [],
+							"id": "12374471-8d467f8a-b283-4d2c-a0fa-1176486c73b1"
 						}
 					],
 					"id": "12374471-945e2a20-60be-40e0-9b62-e8241b580a22"
