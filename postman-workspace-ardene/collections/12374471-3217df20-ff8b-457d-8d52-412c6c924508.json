@@ -3921,14 +3921,88 @@
 									"response": []
 								},
 								{
-									"name": "ELF - sample",
+									"name": "ELF - banners sample",
 									"id": "12374471-d5e6d151-200f-4365-b6d4-fc689efcaeac",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [
+											{
+												"key": "Host",
+												"value": "sdk.iad-05.braze.com"
+											},
+											{
+												"key": "content-type",
+												"value": "application/json"
+											},
+											{
+												"key": "x-braze-req-attempt",
+												"value": "2"
+											},
+											{
+												"key": "accept",
+												"value": "*/*"
+											},
+											{
+												"key": "x-braze-datarequest",
+												"value": "true"
+											},
+											{
+												"key": "accept-language",
+												"value": "en-GB,en;q=0.9"
+											},
+											{
+												"key": "x-braze-last-req-ms-ago",
+												"value": "9665"
+											},
+											{
+												"key": "x-braze-bannersrequest",
+												"value": "true"
+											},
+											{
+												"key": "user-agent",
+												"value": "e.l.f.%20Cosmetics/4 CFNetwork/3826.600.41 Darwin/24.6.0"
+											},
+											{
+												"key": "x-braze-req-tokens-remaining",
+												"value": "19"
+											},
+											{
+												"key": "x-braze-ept-req-tokens-remaining",
+												"value": "2"
+											},
+											{
+												"key": "x-braze-api-key",
+												"value": "945fd9e2-5922-4249-a9d9-92e8291d1872"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"api_key\":\"945fd9e2-5922-4249-a9d9-92e8291d1872\",\"app_version\":\"27.3.0\",\"app_version_code\":\"27.3.0.0\",\"device_id\":\"89075351-82BD-4B5A-B041-7D38DC7E6852\",\"placements\":[{\"id\":\"app-pdp\"},{\"id\":\"p0-homepage-cos\"},{\"id\":\"p1-homepage-skin\"},{\"id\":\"my-account\"},{\"id\":\"app-cart\"},{\"id\":\"p0-homepage-skin\"},{\"id\":\"app-cart-bottom\"},{\"id\":\"p1-homepage-cos\"},{\"id\":\"app-pdp-top\"},{\"id\":\"app-pdp-bottom\"},{\"id\":\"app-cart-top\"}],\"sdk_version\":\"12.0.3\",\"time\":1763726019.4405088,\"user_id\":\"test3@poq.com\"}",
+											"options": {
+												"raw": {
+													"language": "text"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://sdk.iad-05.braze.com/api/v3/banners/sync",
+											"protocol": "https",
+											"host": [
+												"sdk",
+												"iad-05",
+												"braze",
+												"com"
+											],
+											"path": [
+												"api",
+												"v3",
+												"banners",
+												"sync"
+											]
+										}
 									},
 									"response": []
 								}
