@@ -3898,11 +3898,11 @@
 											}
 										},
 										"url": {
-											"raw": "https://sdk.iad-05.braze.com/api/v3/banners/sync",
+											"raw": "https://sdk.iad-07.braze.com/api/v3/banners/sync",
 											"protocol": "https",
 											"host": [
 												"sdk",
-												"iad-05",
+												"iad-07",
 												"braze",
 												"com"
 											],
