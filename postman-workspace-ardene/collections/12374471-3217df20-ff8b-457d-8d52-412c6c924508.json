@@ -3919,6 +3919,18 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "ELF - sample",
+									"id": "12374471-d5e6d151-200f-4365-b6d4-fc689efcaeac",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "12374471-4642d917-3fec-4afd-b2a6-f4efaa9c0036"
