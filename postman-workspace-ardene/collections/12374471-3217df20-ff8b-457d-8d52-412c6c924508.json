@@ -3853,7 +3853,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\",\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
 													"options": {
 														"raw": {
 															"language": "json"
