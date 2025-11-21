@@ -3849,7 +3849,8 @@
 											},
 											{
 												"key": "x-braze-req-attempt",
-												"value": "2"
+												"value": "2",
+												"disabled": true
 											},
 											{
 												"key": "accept",
@@ -3873,19 +3874,22 @@
 											},
 											{
 												"key": "user-agent",
-												"value": "e.l.f.%20Cosmetics/4 CFNetwork/3826.600.41 Darwin/24.6.0"
+												"value": "e.l.f.%20Cosmetics/4 CFNetwork/3826.600.41 Darwin/24.6.0",
+												"disabled": true
 											},
 											{
 												"key": "x-braze-req-tokens-remaining",
-												"value": "19"
+												"value": "19",
+												"disabled": true
 											},
 											{
 												"key": "x-braze-ept-req-tokens-remaining",
-												"value": "2"
+												"value": "2",
+												"disabled": true
 											},
 											{
 												"key": "x-braze-api-key",
-												"value": "945fd9e2-5922-4249-a9d9-92e8291d1872"
+												"value": "0442b2ab-5aa5-47c5-b6a4-1daa0fd15052"
 											}
 										],
 										"body": {
