@@ -3834,7 +3834,52 @@
 									"name": "Braze content with API trigger",
 									"item": [
 										{
-											"name": "Ardene - banners sample",
+											"name": "01. Trigger Canvas",
+											"id": "12374471-02fa00ed-cf67-4e2d-810a-fa822f589a9e",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\",\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+													"protocol": "https",
+													"host": [
+														"rest",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"canvas",
+														"trigger",
+														"send"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "02. Fetch content-cards",
 											"id": "12374471-47636965-c8bb-4d83-b95e-11e61fe966c7",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
@@ -4089,51 +4134,6 @@
 													"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9NDgxNWVjY2QtMWRiMi00MGU5LWExNjUtNzc4NDQwMmZjN2YxJmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNS0xMS0yMVQxMiUzQTU2JTNBMjAuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1763729783,\n            \"ea\": 1763988983,\n            \"e\": null,\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        }\n    ],\n    \"last_full_sync_at\": 1763729812,\n    \"last_card_updated_at\": 1763729786,\n    \"full_sync\": true\n}"
 												}
 											]
-										},
-										{
-											"name": "01. Trigger Canvas",
-											"id": "12374471-02fa00ed-cf67-4e2d-810a-fa822f589a9e",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													},
-													{
-														"key": "Authorization",
-														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\",\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
-													"protocol": "https",
-													"host": [
-														"rest",
-														"iad-07",
-														"braze",
-														"com"
-													],
-													"path": [
-														"canvas",
-														"trigger",
-														"send"
-													]
-												}
-											},
-											"response": []
 										}
 									],
 									"id": "12374471-8d467f8a-b283-4d2c-a0fa-1176486c73b1"
