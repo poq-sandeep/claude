@@ -3831,7 +3831,7 @@
 							"name": "SDK Test Harness",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "Dev Banner Sync",
 									"id": "12374471-47636965-c8bb-4d83-b95e-11e61fe966c7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
