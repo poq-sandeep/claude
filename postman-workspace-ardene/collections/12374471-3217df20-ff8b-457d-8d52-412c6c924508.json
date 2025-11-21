@@ -4005,6 +4005,51 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "12374471-02fa00ed-cf67-4e2d-810a-fa822f589a9e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer a valid rest api key"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\",\n    \"recipients\": [\n      {\n        \"external_user_id\": targeted user id,\n        \"canvas_entry_properties\": {\n          \"string_property\": your example string,\n          \"example_integer_property\": your example integer           \n        }\n      }\n    ]\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+											"protocol": "https",
+											"host": [
+												"rest",
+												"iad-07",
+												"braze",
+												"com"
+											],
+											"path": [
+												"canvas",
+												"trigger",
+												"send"
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "12374471-4642d917-3fec-4afd-b2a6-f4efaa9c0036"
