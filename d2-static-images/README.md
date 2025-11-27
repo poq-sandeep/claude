@@ -291,6 +291,40 @@ user -> server  # Inline comment
 
 ## Advanced Usage
 
+### Using AI Assistants to Update Diagrams
+
+You can use AI assistants like Claude Code to make targeted updates to your D2 diagrams using natural language prompts. This is particularly useful for complex diagrams with many elements.
+
+#### Example Prompts
+
+**Adding Documentation Elements:**
+```
+Add a table to the d2 file listing all the loyalty interfaces indicated
+by tooltip like LOY-. Include a description in the table from the label
+associated with the tooltip. Use bullets instead of table.
+```
+
+**Styling Updates:**
+```
+Update the Shopify scenario to change color of the lines between
+ELFxPoq.PoqBFC.bff -> ELF Services.integration to green
+```
+
+**Extracting Information:**
+```
+Create a legend box showing all API endpoints with their descriptions
+from the connection labels
+```
+
+#### Tips for Effective Prompts
+
+- Be specific about what you want to update (shapes, connections, styles, text)
+- Reference existing elements by their exact names from the D2 file
+- For styling, specify colors using hex codes or standard color names
+- Mention positioning preferences (e.g., "near: bottom-left", "near: center-right")
+- Ask for documentation elements to be extracted from existing labels or tooltips
+- After the AI makes changes, review them and run `./generate.sh` to see the results
+
 ### Manual Generation (Without Git)
 
 If you want to generate SVGs without committing:
