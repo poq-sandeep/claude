@@ -3823,6 +3823,530 @@
 					],
 					"id": "12374471-898f7597-57be-4fec-bdec-261e0140c439",
 					"description": "[https://docs.uberall.com/guides/quickstart#access-token-lifecycle-and-authentication](https://docs.uberall.com/guides/quickstart#access-token-lifecycle-and-authentication)"
+				},
+				{
+					"name": "Braze",
+					"item": [
+						{
+							"name": "SDK Test Harness",
+							"item": [
+								{
+									"name": "Braze content with API trigger",
+									"item": [
+										{
+											"name": "01. Trigger Canvas",
+											"id": "12374471-02fa00ed-cf67-4e2d-810a-fa822f589a9e",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+													"protocol": "https",
+													"host": [
+														"rest",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"canvas",
+														"trigger",
+														"send"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "12374471-61427081-67c2-4412-994a-b86b47ad1592",
+													"name": "New Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Authorization",
+																"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+															"protocol": "https",
+															"host": [
+																"rest",
+																"iad-07",
+																"braze",
+																"com"
+															],
+															"path": [
+																"canvas",
+																"trigger",
+																"send"
+															]
+														}
+													},
+													"status": "Created",
+													"code": 201,
+													"_postman_previewlanguage": null,
+													"header": [
+														{
+															"key": "Date",
+															"value": "Fri, 21 Nov 2025 13:04:12 GMT"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														},
+														{
+															"key": "CF-Ray",
+															"value": "9a20643c5a84ed0c-LHR"
+														},
+														{
+															"key": "CF-Cache-Status",
+															"value": "DYNAMIC"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "max-age=0, private, must-revalidate"
+														},
+														{
+															"key": "Content-Encoding",
+															"value": "gzip"
+														},
+														{
+															"key": "ETag",
+															"value": "W/\"18f8e1ef91d139699baa948d5616939b\""
+														},
+														{
+															"key": "Strict-Transport-Security",
+															"value": "max-age=31536000; includeSubDomains"
+														},
+														{
+															"key": "Vary",
+															"value": "Origin,Accept-Encoding"
+														},
+														{
+															"key": "x-ratelimit-limit",
+															"value": "250000"
+														},
+														{
+															"key": "x-ratelimit-remaining",
+															"value": "249999"
+														},
+														{
+															"key": "x-ratelimit-reset",
+															"value": "1763733600"
+														},
+														{
+															"key": "x-request-id",
+															"value": "347a882e-71a8-4aa5-8012-da14bc3bc16c"
+														},
+														{
+															"key": "x-runtime",
+															"value": "0.060508"
+														},
+														{
+															"key": "Server",
+															"value": "cloudflare"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"dispatch_id\": \"6920634c5919f2c5ccc4acc76850c3a8\",\n    \"message\": \"success\"\n}"
+												}
+											]
+										},
+										{
+											"name": "02. Fetch content-cards",
+											"id": "12374471-47636965-c8bb-4d83-b95e-11e61fe966c7",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Host",
+														"value": "sdk.iad-07.braze.com"
+													},
+													{
+														"key": "content-type",
+														"value": "application/json"
+													},
+													{
+														"key": "x-braze-req-attempt",
+														"value": "1"
+													},
+													{
+														"key": "accept",
+														"value": "*/*"
+													},
+													{
+														"key": "x-braze-datarequest",
+														"value": "true"
+													},
+													{
+														"key": "braze-sync-retry-count",
+														"value": "2"
+													},
+													{
+														"key": "accept-language",
+														"value": "en-CA,en-US;q=0.9,en;q=0.8"
+													},
+													{
+														"key": "x-braze-last-req-ms-ago",
+														"value": "7200000"
+													},
+													{
+														"key": "user-agent",
+														"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+													},
+													{
+														"key": "x-braze-req-tokens-remaining",
+														"value": "28"
+													},
+													{
+														"key": "x-braze-contentcardsrequest",
+														"value": "true"
+													},
+													{
+														"key": "x-braze-ept-req-tokens-remaining",
+														"value": "4"
+													},
+													{
+														"key": "x-braze-api-key",
+														"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+													"protocol": "https",
+													"host": [
+														"sdk",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"api",
+														"v3",
+														"content_cards",
+														"sync"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "12374471-2000cda7-99a5-4e50-9471-e2ad95258056",
+													"name": "Dev Banner Sync",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Host",
+																"value": "sdk.iad-07.braze.com"
+															},
+															{
+																"key": "content-type",
+																"value": "application/json"
+															},
+															{
+																"key": "x-braze-req-attempt",
+																"value": "1"
+															},
+															{
+																"key": "accept",
+																"value": "*/*"
+															},
+															{
+																"key": "x-braze-datarequest",
+																"value": "true"
+															},
+															{
+																"key": "braze-sync-retry-count",
+																"value": "2"
+															},
+															{
+																"key": "accept-language",
+																"value": "en-CA,en-US;q=0.9,en;q=0.8"
+															},
+															{
+																"key": "x-braze-last-req-ms-ago",
+																"value": "7200000"
+															},
+															{
+																"key": "user-agent",
+																"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+															},
+															{
+																"key": "x-braze-req-tokens-remaining",
+																"value": "28"
+															},
+															{
+																"key": "x-braze-contentcardsrequest",
+																"value": "true"
+															},
+															{
+																"key": "x-braze-ept-req-tokens-remaining",
+																"value": "4"
+															},
+															{
+																"key": "x-braze-api-key",
+																"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+															"protocol": "https",
+															"host": [
+																"sdk",
+																"iad-07",
+																"braze",
+																"com"
+															],
+															"path": [
+																"api",
+																"v3",
+																"content_cards",
+																"sync"
+															]
+														}
+													},
+													"status": "Created",
+													"code": 201,
+													"_postman_previewlanguage": null,
+													"header": [
+														{
+															"key": "Date",
+															"value": "Fri, 21 Nov 2025 13:04:15 GMT"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														},
+														{
+															"key": "CF-Ray",
+															"value": "9a20644dcb8663f5-LHR"
+														},
+														{
+															"key": "CF-Cache-Status",
+															"value": "DYNAMIC"
+														},
+														{
+															"key": "Access-Control-Allow-Origin",
+															"value": "*"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "max-age=0, private, must-revalidate"
+														},
+														{
+															"key": "Content-Encoding",
+															"value": "gzip"
+														},
+														{
+															"key": "ETag",
+															"value": "W/\"43211b635f8c12e536b429ee0ac5a9c4\""
+														},
+														{
+															"key": "Strict-Transport-Security",
+															"value": "max-age=31536000; includeSubDomains"
+														},
+														{
+															"key": "Vary",
+															"value": "Origin,Accept-Encoding"
+														},
+														{
+															"key": "x-ratelimit-limit",
+															"value": "500.0"
+														},
+														{
+															"key": "x-ratelimit-remaining",
+															"value": "499.0"
+														},
+														{
+															"key": "x-ratelimit-reset",
+															"value": "1763730258"
+														},
+														{
+															"key": "x-request-id",
+															"value": "dc549e79-9414-4fd6-a990-e1645da1a266"
+														},
+														{
+															"key": "x-runtime",
+															"value": "0.157761"
+														},
+														{
+															"key": "Server",
+															"value": "cloudflare"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9NDgxNWVjY2QtMWRiMi00MGU5LWExNjUtNzc4NDQwMmZjN2YxJmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNS0xMS0yMVQxMiUzQTU2JTNBMjAuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1763729783,\n            \"ea\": 1763988983,\n            \"e\": null,\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        }\n    ],\n    \"last_full_sync_at\": 1763730255,\n    \"last_card_updated_at\": 1763729786,\n    \"full_sync\": true\n}"
+												}
+											]
+										}
+									],
+									"id": "12374471-8d467f8a-b283-4d2c-a0fa-1176486c73b1"
+								},
+								{
+									"name": "ELF - banners sample",
+									"id": "12374471-d5e6d151-200f-4365-b6d4-fc689efcaeac",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Host",
+												"value": "sdk.iad-05.braze.com"
+											},
+											{
+												"key": "content-type",
+												"value": "application/json"
+											},
+											{
+												"key": "x-braze-req-attempt",
+												"value": "2"
+											},
+											{
+												"key": "accept",
+												"value": "*/*"
+											},
+											{
+												"key": "x-braze-datarequest",
+												"value": "true"
+											},
+											{
+												"key": "accept-language",
+												"value": "en-GB,en;q=0.9"
+											},
+											{
+												"key": "x-braze-last-req-ms-ago",
+												"value": "9665"
+											},
+											{
+												"key": "x-braze-bannersrequest",
+												"value": "true"
+											},
+											{
+												"key": "user-agent",
+												"value": "e.l.f.%20Cosmetics/4 CFNetwork/3826.600.41 Darwin/24.6.0"
+											},
+											{
+												"key": "x-braze-req-tokens-remaining",
+												"value": "19"
+											},
+											{
+												"key": "x-braze-ept-req-tokens-remaining",
+												"value": "2"
+											},
+											{
+												"key": "x-braze-api-key",
+												"value": "945fd9e2-5922-4249-a9d9-92e8291d1872"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"api_key\":\"945fd9e2-5922-4249-a9d9-92e8291d1872\",\"app_version\":\"27.3.0\",\"app_version_code\":\"27.3.0.0\",\"device_id\":\"89075351-82BD-4B5A-B041-7D38DC7E6852\",\"placements\":[{\"id\":\"app-pdp\"},{\"id\":\"p0-homepage-cos\"},{\"id\":\"p1-homepage-skin\"},{\"id\":\"my-account\"},{\"id\":\"app-cart\"},{\"id\":\"p0-homepage-skin\"},{\"id\":\"app-cart-bottom\"},{\"id\":\"p1-homepage-cos\"},{\"id\":\"app-pdp-top\"},{\"id\":\"app-pdp-bottom\"},{\"id\":\"app-cart-top\"}],\"sdk_version\":\"12.0.3\",\"time\":1763726019.4405088,\"user_id\":\"test3@poq.com\"}",
+											"options": {
+												"raw": {
+													"language": "text"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://sdk.iad-05.braze.com/api/v3/banners/sync",
+											"protocol": "https",
+											"host": [
+												"sdk",
+												"iad-05",
+												"braze",
+												"com"
+											],
+											"path": [
+												"api",
+												"v3",
+												"banners",
+												"sync"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "12374471-4642d917-3fec-4afd-b2a6-f4efaa9c0036"
+						}
+					],
+					"id": "12374471-945e2a20-60be-40e0-9b62-e8241b580a22"
 				}
 			],
 			"id": "12374471-c9eb8518-8247-4b30-bd20-02c3fdd57958"
