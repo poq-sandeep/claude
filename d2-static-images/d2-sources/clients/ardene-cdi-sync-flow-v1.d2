@@ -1,0 +1,234 @@
+direction: right
+
+title: {
+  label: Ardene | CDI Sync
+  near: top-center
+  shape: text
+  style.font-size: 32
+  style.bold: true
+}
+
+# Cloud Data Platform
+cloud-platform: {
+  label: Cloud Data Platform of Choice
+  style.fill: "#fff9c4"
+  style.stroke: "#f9a825"
+  style.stroke-width: 3
+
+  permissions: {
+    label: CDI Permissions
+    style.fill: "#fff59d"
+  }
+
+  account: {
+    label: CDI Account
+    style.fill: "#fff59d"
+  }
+
+  tables: {
+    label: Data Warehouse Tables
+    style.fill: "#ffee58"
+
+    table-x: {
+      label: Table X
+      shape: cylinder
+      style.fill: "#ffeb3b"
+    }
+
+    table-y: {
+      label: Table Y
+      shape: cylinder
+      style.fill: "#ffeb3b"
+    }
+
+    table-z: {
+      label: Table Z
+      shape: cylinder
+      style.fill: "#ffeb3b"
+    }
+  }
+
+  transform: {
+    label: Transform Query\nSelect FROM XYZ tables,\nINSERT into BrazeIngestion.Users\nAS XYZ value
+    style.fill: "#ffe082"
+    style.font-size: 11
+  }
+}
+
+# Braze
+braze: {
+  label: Braze
+  style.fill: "#f3e5f5"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 3
+
+  dataset: {
+    label: braze_<environment>_dataset
+    style.fill: "#e1bee7"
+
+    dw-tables: {
+      label: dw_* tables
+      style.fill: "#ce93d8"
+    }
+  }
+
+  cdi-ingestion: {
+    label: cdi_ingestion
+    style.fill: "#e1bee7"
+
+    updated-at: {
+      label: UPDATED_AT\nXYZ values
+      style.fill: "#ce93d8"
+      style.font-size: 11
+    }
+  }
+
+  user-data: {
+    label: Braze User Data
+    shape: cylinder
+    style.fill: "#ab47bc"
+  }
+
+  listener: {
+    label: Braze has a listener that checks for\nUPDATED_AT values in tables every\n15 minutes to pull new rows into Braze
+    shape: text
+    style.fill: "#f3e5f5"
+    style.font-size: 11
+    style.italic: true
+  }
+}
+
+# Flow 1: Platform Setup
+cloud-platform.permissions -> cloud-platform.account: {
+  label: "1a\nSetup"
+  style.stroke: "#f9a825"
+  style.stroke-width: 2
+}
+
+cloud-platform.account -> braze.dataset.dw-tables: {
+  label: "1b\nCDI Sync"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 3
+  style.font-color: "#7b1fa2"
+  style.bold: true
+}
+
+cloud-platform.account -> cloud-platform.tables.table-x: {
+  label: "1c\nAccess"
+  style.stroke: "#f9a825"
+  style.stroke-width: 2
+}
+
+cloud-platform.account -> cloud-platform.tables.table-y: {
+  label: "1c"
+  style.stroke: "#f9a825"
+  style.stroke-width: 2
+}
+
+cloud-platform.account -> cloud-platform.tables.table-z: {
+  label: "1c"
+  style.stroke: "#f9a825"
+  style.stroke-width: 2
+}
+
+# Flow 2: Transform Query
+cloud-platform.tables.table-x -> cloud-platform.transform: {
+  label: "2a\nQuery"
+  style.stroke: "#f57c00"
+  style.stroke-width: 2
+}
+
+cloud-platform.tables.table-y -> cloud-platform.transform: {
+  label: "2a"
+  style.stroke: "#f57c00"
+  style.stroke-width: 2
+}
+
+cloud-platform.tables.table-z -> cloud-platform.transform: {
+  label: "2a"
+  style.stroke: "#f57c00"
+  style.stroke-width: 2
+}
+
+cloud-platform.transform -> braze.cdi-ingestion.updated-at: {
+  label: "2b\nTransform & Insert"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 3
+  style.font-color: "#7b1fa2"
+  style.bold: true
+}
+
+# Flow 3: Braze Ingestion
+braze.cdi-ingestion.updated-at -> braze.user-data: {
+  label: "2\nBraze User Data\n*15 min listener checks UPDATED_AT"
+  style.stroke: "#9c27b0"
+  style.stroke-width: 3
+  style.font-color: "#9c27b0"
+  style.bold: true
+  style.stroke-dash: 3
+}
+
+# Listener note connection
+braze.listener -> braze.cdi-ingestion.updated-at: {
+  label: "15 min interval"
+  style.stroke: "#9c27b0"
+  style.stroke-dash: 5
+  style.stroke-width: 1
+}
+
+# Notes
+notes: {
+  shape: text
+  near: bottom-left
+  label: |md
+    ## CDI Sync Process
+
+    ### Steps Overview
+    - **1a**: CDI Permissions setup for Cloud Data Platform
+    - **1b**: CDI Account connects to Braze dataset (dw_* tables)
+    - **1c**: CDI Account accesses source tables (Table X, Y, Z)
+    - **2a**: Transform query selects data from XYZ tables
+    - **2b**: Transform inserts into BrazeIngestion.Users with XYZ values
+    - **2**: Braze listener checks UPDATED_AT every 15 minutes
+
+    ### Key Components
+    - **Cloud Data Platform**: Any supported data warehouse
+    - **CDI (Cloud Data Ingestion)**: Braze's data import framework
+    - **Transform Query**: Maps source data to Braze user schema
+    - **UPDATED_AT**: Timestamp field for incremental sync
+    - **15-minute Listener**: Braze polls for new/updated rows
+
+    ### Data Flow
+    1. Source tables in cloud platform contain raw data
+    2. Transform query reshapes data for Braze schema
+    3. Data inserted into cdi_ingestion with UPDATED_AT timestamp
+    4. Braze listener pulls new rows every 15 minutes
+    5. User data updated in Braze for segmentation and campaigns
+  |
+  style: {
+    font-size: 10
+    fill: "#f5f5f5"
+    stroke: "#666"
+    stroke-width: 1
+  }
+}
+
+integration-note: {
+  shape: text
+  near: bottom-right
+  label: |md
+    ## CDI Sync Benefits
+
+    - **Scheduled Updates**: Automated 15-min sync
+    - **Incremental Loading**: Only new/changed data
+    - **Platform Agnostic**: Works with any cloud warehouse
+    - **Transform on Source**: Data shaping in SQL
+    - **No API Limits**: Bulk data ingestion
+  |
+  style: {
+    font-size: 10
+    fill: "#e8f5e9"
+    stroke: "#388e3c"
+    stroke-width: 1
+  }
+}

@@ -1,0 +1,288 @@
+direction: right
+
+title: {
+  label: Ardene | In-Store Purchase Data Path
+  near: top-center
+  shape: text
+  style.font-size: 32
+  style.bold: true
+}
+
+# Physical Store
+physical-store: {
+  label: Physical Store
+  style.fill: "#e8f5e9"
+  style.stroke: "#388e3c"
+  style.stroke-width: 2
+
+  store: {
+    label: Customer makes in-store\npurchase\n*optional
+    style.fill: "#c8e6c9"
+    style.font-size: 12
+  }
+}
+
+# Microsoft Azure
+azure: {
+  label: Microsoft Azure
+  style.fill: "#e3f2fd"
+  style.stroke: "#1976d2"
+  style.stroke-width: 3
+
+  event-processing: {
+    label: Event Processing
+    style.fill: "#bbdefb"
+
+    xstore-receipt: {
+      label: X-Store Digital Receipt\n*user asked for email receipt
+      style.fill: "#90caf9"
+      style.font-size: 11
+    }
+  }
+
+  data-warehouse: {
+    label: Data Warehouse
+    shape: cylinder
+    style.fill: "#90caf9"
+  }
+
+  data-processing: {
+    label: Outbound Data Processing
+    style.fill: "#bbdefb"
+  }
+}
+
+# CrowdTwist
+crowdtwist: {
+  label: CrowdTwist (Loyalty)
+  style.fill: "#fff3e0"
+  style.stroke: "#f57c00"
+  style.stroke-width: 3
+
+  loyalty-processing: {
+    label: Loyalty Data Processing
+    style.fill: "#ffe0b2"
+  }
+
+  ct-braze-integration: {
+    label: CT > Braze REST API Integration
+    style.fill: "#ffcc80"
+  }
+}
+
+# Braze
+braze: {
+  label: Braze (CDP/CRM/Orchestration)
+  style.fill: "#f3e5f5"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 3
+
+  profile-updates: {
+    label: Profile Updates - Point Balances
+    style.fill: "#e1bee7"
+  }
+
+  event-data-redemptions: {
+    label: Event Data - Redemptions
+    style.fill: "#ce93d8"
+  }
+
+  event-data-rewards: {
+    label: Event Data - Rewards Earned
+    style.fill: "#ce93d8"
+  }
+
+  event-data-transactions: {
+    label: Event Data - User Transactions
+    style.fill: "#ce93d8"
+  }
+
+  event-data-purchase: {
+    label: Event Data - Purchase Activity
+    style.fill: "#ce93d8"
+  }
+
+  attribute-data: {
+    label: Attribute Data - Point Balance
+    style.fill: "#ce93d8"
+  }
+
+  event-data-redemption: {
+    label: Event Data - Redemption Data
+    style.fill: "#ce93d8"
+  }
+
+  triggered-campaign: {
+    label: Triggered Campaign/Canvas
+    style.fill: "#ab47bc"
+  }
+}
+
+# Communication Channels
+channels: {
+  label: Touchpoints
+  near: top-right
+  style.fill: "#e0f7fa"
+
+  email: {
+    label: Email
+    shape: rectangle
+    style.fill: "#b2ebf2"
+  }
+
+  sms: {
+    label: SMS
+    shape: rectangle
+    style.fill: "#b2ebf2"
+  }
+}
+
+# Flow 1: Customer Purchase
+physical-store.store -> azure.event-processing.xstore-receipt: {
+  label: "1\nCustomer makes in-store purchase"
+  style.stroke: "#388e3c"
+  style.stroke-width: 3
+  style.font-color: "#388e3c"
+  style.bold: true
+}
+
+# Flow 1a-1b: Azure Processing
+azure.event-processing.xstore-receipt -> azure.data-warehouse: {
+  label: "1a\nXML Data"
+  style.stroke: "#1976d2"
+  style.stroke-width: 2
+}
+
+azure.data-warehouse -> azure.data-processing: {
+  label: "1b\nWarehouse Data"
+  style.stroke: "#1976d2"
+  style.stroke-width: 2
+}
+
+# Flow 2: Azure to CrowdTwist
+azure.data-processing -> crowdtwist.loyalty-processing: {
+  label: "2\nOutbound Data Processing"
+  style.stroke: "#f57c00"
+  style.stroke-width: 3
+  style.font-color: "#f57c00"
+  style.bold: true
+}
+
+# Flow 2a-2d: CrowdTwist Processing
+crowdtwist.ct-braze-integration -> braze.event-data-transactions: {
+  label: "2a\nCDI Sync Event Data - User Transactions\nusers/track"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+  style.font-size: 10
+}
+
+crowdtwist.ct-braze-integration -> braze.event-data-purchase: {
+  label: "2b\nEvent Data - Purchase Activity\nusers/track"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+  style.font-size: 10
+}
+
+crowdtwist.ct-braze-integration -> braze.attribute-data: {
+  label: "2c\nAttribute Data - Point Balance\nusers/track"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+  style.font-size: 10
+}
+
+crowdtwist.ct-braze-integration -> braze.event-data-redemption: {
+  label: "2d\nEvent Data - Redemption Data\nusers/track"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+  style.font-size: 10
+}
+
+# Flow 3: Braze Campaign Trigger
+braze.profile-updates -> braze.triggered-campaign: {
+  label: "3"
+  style.stroke: "#9c27b0"
+  style.stroke-width: 2
+}
+
+braze.event-data-redemptions -> braze.triggered-campaign: {
+  label: "3"
+  style.stroke: "#9c27b0"
+  style.stroke-width: 2
+}
+
+braze.event-data-rewards -> braze.triggered-campaign: {
+  label: "3"
+  style.stroke: "#9c27b0"
+  style.stroke-width: 2
+}
+
+# Flow 3a-3b: Campaign to Channels
+braze.triggered-campaign -> channels.email: {
+  label: "3a"
+  style.stroke: "#00acc1"
+  style.stroke-width: 2
+}
+
+braze.triggered-campaign -> channels.sms: {
+  label: "3b"
+  style.stroke: "#00acc1"
+  style.stroke-width: 2
+}
+
+# Additional connections for context
+crowdtwist.loyalty-processing -> crowdtwist.ct-braze-integration: {
+  label: "Processing"
+  style.stroke: "#f57c00"
+}
+
+crowdtwist.ct-braze-integration -> braze.profile-updates: {
+  label: "2a\nProfile Updates"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+}
+
+crowdtwist.ct-braze-integration -> braze.event-data-redemptions: {
+  label: "2b\nRedemptions"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+}
+
+crowdtwist.ct-braze-integration -> braze.event-data-rewards: {
+  label: "2c\nRewards Earned"
+  style.stroke: "#7b1fa2"
+  style.stroke-width: 2
+}
+
+# Notes
+notes: {
+  shape: text
+  near: bottom-left
+  label: |md
+    ## In-Store Purchase Data Flow
+
+    ### Steps Overview
+    - **1**: Customer completes in-store purchase (optional email receipt)
+    - **1a**: XML data sent to Data Warehouse
+    - **1b**: Warehouse data processed
+    - **2**: Outbound data processing sends to CrowdTwist
+    - **2a-2d**: CrowdTwist sends multiple data types to Braze:
+      - User transactions (CDI Sync)
+      - Purchase activity
+      - Point balance updates
+      - Redemption data
+    - **3**: Triggered campaigns/canvas in Braze
+    - **3a-3b**: Delivery via Email/SMS channels
+
+    ### Key Integration Points
+    - X-Store Digital Receipt captures optional email requests
+    - CrowdTwist processes loyalty data from warehouse
+    - Multiple event and attribute types sent to Braze
+    - REST API (users/track) used for all CrowdTwist → Braze updates
+  |
+  style: {
+    font-size: 10
+    fill: "#f5f5f5"
+    stroke: "#666"
+    stroke-width: 1
+  }
+}
