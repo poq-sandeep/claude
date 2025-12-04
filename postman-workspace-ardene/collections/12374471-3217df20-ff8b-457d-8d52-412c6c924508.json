@@ -3929,7 +3929,7 @@
 									"response": [
 										{
 											"id": "12374471-411f58b6-5e3a-4438-80ae-15c0d2776529",
-											"name": "ELF - banners sample",
+											"name": "Sample",
 											"originalRequest": {
 												"method": "POST",
 												"header": [
