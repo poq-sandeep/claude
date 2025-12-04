@@ -1794,7 +1794,107 @@
 								},
 								"description": "Find pick-up point locations based on geographic coordinates.\nReturns stores that can serve as pick-up points for orders.\n"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "12374471-d7af6865-cec9-46f6-b5aa-0bb1903eaa0f",
+									"name": "Get pick-up point locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{shopify-store-tools-url}}/pick-up-points?lat=48.85&lng=2.35&country_code=CA",
+											"host": [
+												"{{shopify-store-tools-url}}"
+											],
+											"path": [
+												"pick-up-points"
+											],
+											"query": [
+												{
+													"key": "lat",
+													"value": "48.85",
+													"description": "(Required) Latitude of the location to search around"
+												},
+												{
+													"key": "lng",
+													"value": "2.35",
+													"description": "(Required) Longitude of the location to search around"
+												},
+												{
+													"key": "country_code",
+													"value": "CA",
+													"description": "ISO 3166-1 alpha-2 country code to filter results (e.g., \"US\", \"CA\")"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Authorization, Content-Type"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "POST, GET, OPTIONS"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Dec 2025 11:16:37 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "railway-edge"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "X-Railway-Edge",
+											"value": "railway/europe-west4-drams3a"
+										},
+										{
+											"key": "X-Railway-Request-Id",
+											"value": "y9tvFaIQRqCQ9qFD0-QtfA"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"deliveryPoints\": [\n        {\n            \"pointId\": \"2561954\",\n            \"type\": \"store\",\n            \"pointName\": \"Avalon Mall\",\n            \"location\": {\n                \"addressComponents\": {\n                    \"streetNumber\": \"48\",\n                    \"route\": \"Kenmount Road\",\n                    \"locality\": \"St. John's\",\n                    \"administrativeArea\": {\n                        \"name\": \"Newfoundland and Labrador\",\n                        \"code\": \"\"\n                    },\n                    \"postalCode\": \"A1B 1W3\",\n                    \"country\": \"Canada\",\n                    \"countryCode\": \"CA\"\n                },\n                \"geometry\": {\n                    \"location\": {\n                        \"lat\": 47.5606038,\n                        \"lng\": -52.7541317\n                    }\n                }\n            },\n            \"openingHours\": {\n                \"weekdayText\": [\n                    \"Monday: 9:30 AM – 9:00 PM\",\n                    \"Tuesday: 9:30 AM – 9:00 PM\",\n                    \"Wednesday: 9:30 AM – 9:00 PM\",\n                    \"Thursday: 9:30 AM – 9:00 PM\",\n                    \"Friday: 9:30 AM – 9:00 PM\",\n                    \"Saturday: 9:30 AM – 9:00 PM\",\n                    \"Sunday: 12:00 PM – 5:00 PM\"\n                ]\n            }\n        },\n        {\n            \"pointId\": \"2561850\",\n            \"type\": \"store\",\n            \"pointName\": \"Gander Mall\",\n            \"location\": {\n                \"addressComponents\": {\n                    \"streetNumber\": \"132\",\n                    \"route\": \"Bennett Drive\",\n                    \"locality\": \"Gander\",\n                    \"administrativeArea\": {\n                        \"name\": \"Newfoundland and Labrador\",\n                        \"code\": \"\"\n                    },\n                    \"postalCode\": \"A1V 2H2\",\n                    \"country\": \"Canada\",\n                    \"countryCode\": \"CA\"\n                },\n                \"geometry\": {\n                    \"location\": {\n                        \"lat\": 48.9514206,\n                        \"lng\": -54.6032189\n                    }\n                }\n            },\n            \"openingHours\": {\n                \"weekdayText\": [\n                    \"Monday: 10:00 AM – 6:00 PM\",\n                    \"Tuesday: 10:00 AM – 6:00 PM\",\n                    \"Wednesday: 10:00 AM – 6:00 PM\",\n                    \"Thursday: 10:00 AM – 8:00 PM\",\n                    \"Friday: 10:00 AM – 8:00 PM\",\n                    \"Saturday: 10:00 AM – 6:00 PM\",\n                    \"Sunday: 12:00 PM – 5:00 PM\"\n                ]\n            }\n        },\n        {\n            \"pointId\": \"2561789\",\n            \"type\": \"store\",\n            \"pointName\": \"Corner Brook Plaza\",\n            \"location\": {\n                \"addressComponents\": {\n                    \"streetNumber\": \"44\",\n                    \"route\": \"Maple Valley Road\",\n                    \"locality\": \"Corner Brook\",\n                    \"administrativeArea\": {\n                        \"name\": \"Newfoundland and Labrador\",\n                        \"code\": \"\"\n                    },\n                    \"postalCode\": \"A2H 6L8\",\n                    \"country\": \"Canada\",\n                    \"countryCode\": \"CA\"\n                },\n                \"geometry\": {\n                    \"location\": {\n                        \"lat\": 48.94753576,\n                        \"lng\": -57.91707807\n                    }\n                }\n            },\n            \"openingHours\": {\n                \"weekdayText\": [\n                    \"Monday: 9:30 AM – 6:00 PM\",\n                    \"Tuesday: 9:30 AM – 6:00 PM\",\n                    \"Wednesday: 9:30 AM – 9:00 PM\",\n                    \"Thursday: 9:30 AM – 9:00 PM\",\n                    \"Friday: 9:30 AM – 9:00 PM\",\n                    \"Saturday: 9:30 AM – 6:00 PM\",\n                    \"Sunday: 12:00 PM – 5:00 PM\"\n                ]\n            }\n        },\n        {\n            \"pointId\": \"1256195\",\n            \"type\": \"postal_office\",\n            \"pointName\": \"PO - Avalon Mall\",\n            \"location\": {\n                \"addressComponents\": {\n                    \"streetNumber\": \"48\",\n                    \"route\": \"Kenmount Road\",\n                    \"locality\": \"St. John's\",\n                    \"administrativeArea\": {\n                        \"name\": \"Newfoundland and Labrador\",\n                        \"code\": \"\"\n                    },\n                    \"postalCode\": \"A1B 1W3\",\n                    \"country\": \"Canada\",\n                    \"countryCode\": \"CA\"\n                },\n                \"geometry\": {\n                    \"location\": {\n                        \"lat\": 44.6488,\n                        \"lng\": -63.5752\n                    }\n                }\n            },\n            \"openingHours\": {\n                \"weekdayText\": [\n                    \"Monday: 9:30 AM – 9:00 PM\",\n                    \"Tuesday: 9:30 AM – 9:00 PM\",\n                    \"Wednesday: 9:30 AM – 9:00 PM\",\n                    \"Thursday: 9:30 AM – 9:00 PM\",\n                    \"Friday: 9:30 AM – 9:00 PM\",\n                    \"Saturday: 9:30 AM – 9:00 PM\",\n                    \"Sunday: 12:00 PM – 5:00 PM\"\n                ]\n            }\n        },\n        {\n            \"pointId\": \"1256185\",\n            \"type\": \"postal_office\",\n            \"pointName\": \"PO - Gander Mall\",\n            \"location\": {\n                \"addressComponents\": {\n                    \"streetNumber\": \"132\",\n                    \"route\": \"Bennett Drive\",\n                    \"locality\": \"Gander\",\n                    \"administrativeArea\": {\n                        \"name\": \"Newfoundland and Labrador\",\n                        \"code\": \"\"\n                    },\n                    \"postalCode\": \"A1V 2H2\",\n                    \"country\": \"Canada\",\n                    \"countryCode\": \"CA\"\n                },\n                \"geometry\": {\n                    \"location\": {\n                        \"lat\": 45.4215,\n                        \"lng\": -75.6972\n                    }\n                }\n            },\n            \"openingHours\": {\n                \"weekdayText\": [\n                    \"Monday: 10:00 AM – 6:00 PM\",\n                    \"Tuesday: 10:00 AM – 6:00 PM\",\n                    \"Wednesday: 10:00 AM – 6:00 PM\",\n                    \"Thursday: 10:00 AM – 8:00 PM\",\n                    \"Friday: 10:00 AM – 8:00 PM\",\n                    \"Saturday: 10:00 AM – 6:00 PM\",\n                    \"Sunday: 12:00 PM – 5:00 PM\"\n                ]\n            }\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "12374471-f51dd91d-dd9e-4979-8f8b-61b2411e8475"
@@ -1871,7 +1971,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop={{shopify-shop-id}}",
+											"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop={{shopify-shop-id}}&count=100",
 											"host": [
 												"{{shopify-store-tools-url}}"
 											],
@@ -1907,13 +2007,18 @@
 												{
 													"key": "shop",
 													"value": "{{shopify-shop-id}}"
+												},
+												{
+													"key": "count",
+													"value": "100",
+													"type": "text"
 												}
 											]
 										}
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "",
 									"header": [
 										{
 											"key": "Access-Control-Allow-Credentials",
@@ -1952,7 +2057,13 @@
 											"value": "chunked"
 										}
 									],
-									"cookie": [],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
 									"responseTime": null,
 									"body": "{\n    \"locations\": [\n        {\n            \"code\": \"2561785\",\n            \"address\": {\n                \"address1\": \"2 Bloor Street East\",\n                \"address2\": \"C02B\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4W 1A8\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6710978,\n                \"longitude\": -79.386063\n            },\n            \"details\": {\n                \"name\": \"Hudsons Bay Center\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561826\",\n            \"address\": {\n                \"address1\": \"1000 Gerrard Street East\",\n                \"address2\": \"DD2A-DD3\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4M 3G6\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.66890331,\n                \"longitude\": -79.33912082\n            },\n            \"details\": {\n                \"name\": \"Gerrard Square Shopping Centre\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561929\",\n            \"address\": {\n                \"address1\": \"900 Dufferin Street\",\n                \"address2\": \"#0035\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6H 4A9\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6552905,\n                \"longitude\": -79.4340602\n            },\n            \"details\": {\n                \"name\": \"Dufferin Mall\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561679\",\n            \"address\": {\n                \"address1\": \"1980 Saint Clair Avenue West\",\n                \"address2\": \"#A114\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6N 0A3\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.67270296,\n                \"longitude\": -79.47073431\n            },\n            \"details\": {\n                \"name\": \"Stock Yards Village\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561824\",\n            \"address\": {\n                \"address1\": \"700 Lawrence Avenue West\",\n                \"address2\": \"209\",\n                \"city\": \"North York\",\n                \"zip\": \"M6A 3B4\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.7169556,\n                \"longitude\": -79.4469327\n            },\n            \"details\": {\n                \"name\": \"Lawrence Square\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"17:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        }\n    ]\n}"
 								}
