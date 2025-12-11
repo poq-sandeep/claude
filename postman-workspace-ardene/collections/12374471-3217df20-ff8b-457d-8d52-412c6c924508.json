@@ -4029,7 +4029,7 @@
 									"name": "Braze content with API trigger Copy",
 									"item": [
 										{
-											"name": "01. Trigger Canvas",
+											"name": "01. Trigger Campaign",
 											"id": "12374471-3fc4cd8c-8cc9-44cb-9db1-b7912f0e4f07",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
@@ -4056,7 +4056,7 @@
 													}
 												},
 												"url": {
-													"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+													"raw": "https://rest.iad-07.braze.com/campaigns/trigger/send",
 													"protocol": "https",
 													"host": [
 														"rest",
@@ -4065,7 +4065,7 @@
 														"com"
 													],
 													"path": [
-														"canvas",
+														"campaigns",
 														"trigger",
 														"send"
 													]
