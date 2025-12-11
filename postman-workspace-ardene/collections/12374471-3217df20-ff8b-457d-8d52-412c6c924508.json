@@ -4048,7 +4048,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"campaign_id\": \"36110e22-3172-486f-8938-08396440df49\",\n    \"recipients\": [\n      {\n         \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // \"trigger_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"raw": "{\n    \"campaign_id\": \"36110e22-3172-486f-8938-08396440df49\",\n    \"recipients\": [\n      {\n         \"external_user_id\": \"braze-pilot\"//gid://shopify/Customer/8204637077606\"\n        // \"trigger_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
 													"options": {
 														"raw": {
 															"language": "json"
