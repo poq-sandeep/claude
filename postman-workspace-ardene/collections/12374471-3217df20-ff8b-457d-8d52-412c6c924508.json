@@ -2068,6 +2068,189 @@
 									"body": "{\n    \"locations\": [\n        {\n            \"code\": \"2561785\",\n            \"address\": {\n                \"address1\": \"2 Bloor Street East\",\n                \"address2\": \"C02B\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4W 1A8\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6710978,\n                \"longitude\": -79.386063\n            },\n            \"details\": {\n                \"name\": \"Hudsons Bay Center\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561826\",\n            \"address\": {\n                \"address1\": \"1000 Gerrard Street East\",\n                \"address2\": \"DD2A-DD3\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4M 3G6\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.66890331,\n                \"longitude\": -79.33912082\n            },\n            \"details\": {\n                \"name\": \"Gerrard Square Shopping Centre\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561929\",\n            \"address\": {\n                \"address1\": \"900 Dufferin Street\",\n                \"address2\": \"#0035\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6H 4A9\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6552905,\n                \"longitude\": -79.4340602\n            },\n            \"details\": {\n                \"name\": \"Dufferin Mall\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561679\",\n            \"address\": {\n                \"address1\": \"1980 Saint Clair Avenue West\",\n                \"address2\": \"#A114\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6N 0A3\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.67270296,\n                \"longitude\": -79.47073431\n            },\n            \"details\": {\n                \"name\": \"Stock Yards Village\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561824\",\n            \"address\": {\n                \"address1\": \"700 Lawrence Avenue West\",\n                \"address2\": \"209\",\n                \"city\": \"North York\",\n                \"zip\": \"M6A 3B4\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.7169556,\n                \"longitude\": -79.4469327\n            },\n            \"details\": {\n                \"name\": \"Lawrence Square\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"17:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Get store locations with stock availability",
+							"id": "12374471-c4cee87c-7158-4968-9583-cb1112d1d7dc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223962&q=mall&country_code=CA&lat=43.6532&lng=-79.3832&shop={{shopify-shop-id}}&limit=10",
+									"host": [
+										"{{shopify-store-tools-url}}"
+									],
+									"path": [
+										"stock-locator"
+									],
+									"query": [
+										{
+											"key": "sku",
+											"value": "21223962",
+											"description": "(Required) SKU to check availability for"
+										},
+										{
+											"key": "q",
+											"value": "mall",
+											"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n"
+										},
+										{
+											"key": "country_code",
+											"value": "CA",
+											"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")"
+										},
+										{
+											"key": "lat",
+											"value": "43.6532",
+											"description": "Latitude of user/address for proximity search (must be used with lng)"
+										},
+										{
+											"key": "lng",
+											"value": "-79.3832",
+											"description": "Longitude of user/address for proximity search (must be used with lat)"
+										},
+										{
+											"key": "shop",
+											"value": "{{shopify-shop-id}}"
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"description": "Number of stores, if limit is not sent it will default to 5"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "12374471-c1c6766f-677d-49b0-8b2d-d9d73e33750b",
+									"name": "Get store locations with stock availability",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{shopify-store-tools-url}}/stock-locator?sku=21223709&q=toronto&country_code=CA&lat=43.6532&lng=-79.3832&shop={{shopify-shop-id}}&count=100",
+											"host": [
+												"{{shopify-store-tools-url}}"
+											],
+											"path": [
+												"stock-locator"
+											],
+											"query": [
+												{
+													"key": "sku",
+													"value": "21223709",
+													"description": "(Required) SKU to check availability for"
+												},
+												{
+													"key": "q",
+													"value": "toronto",
+													"description": "Free-text search or postal/ZIP input.\n- If it looks like a postal/ZIP, it's geocoded into lat/lng\n- Otherwise used to search city, address1, or name\n"
+												},
+												{
+													"key": "country_code",
+													"value": "CA",
+													"description": "ISO 3166-1 alpha-2 country code (e.g., \"US\", \"CA\")"
+												},
+												{
+													"key": "lat",
+													"value": "43.6532",
+													"description": "Latitude of user/address for proximity search (must be used with lng)"
+												},
+												{
+													"key": "lng",
+													"value": "-79.3832",
+													"description": "Longitude of user/address for proximity search (must be used with lat)"
+												},
+												{
+													"key": "shop",
+													"value": "{{shopify-shop-id}}"
+												},
+												{
+													"key": "count",
+													"value": "100",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true",
+											"uuid": "1739eb6d-568e-4a5b-a208-9f6f6aa819e7"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8",
+											"uuid": "8bb60124-e29f-409d-8a9c-35441d1f0e37"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Dec 2025 11:15:15 GMT",
+											"uuid": "c774f8c8-1c7a-4bd0-a784-07c22bfcea0e"
+										},
+										{
+											"key": "Server",
+											"value": "railway-edge",
+											"uuid": "60b3b361-dace-46cc-aaf8-11b15904b185"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin",
+											"uuid": "937ffb8a-feb3-4a19-995c-e06c9cbfdd46"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express",
+											"uuid": "f5721e92-1e1b-4593-b4cf-41e8570e90a9"
+										},
+										{
+											"key": "X-Railway-Edge",
+											"value": "railway/europe-west4-drams3a",
+											"uuid": "11fe122e-e67f-4801-b543-3f757cca51ce"
+										},
+										{
+											"key": "X-Railway-Request-Id",
+											"value": "WcuuRq1yQpSoD1iR0-QtfA",
+											"uuid": "2c2cc087-0f0d-47e4-9c5f-3fe482ae8bb4"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked",
+											"uuid": "a0acc62e-3e6a-438d-af68-e92a0da889d7"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"responseTime": null,
+									"body": "{\n    \"locations\": [\n        {\n            \"code\": \"2561785\",\n            \"address\": {\n                \"address1\": \"2 Bloor Street East\",\n                \"address2\": \"C02B\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4W 1A8\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6710978,\n                \"longitude\": -79.386063\n            },\n            \"details\": {\n                \"name\": \"Hudsons Bay Center\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"20:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561826\",\n            \"address\": {\n                \"address1\": \"1000 Gerrard Street East\",\n                \"address2\": \"DD2A-DD3\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M4M 3G6\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.66890331,\n                \"longitude\": -79.33912082\n            },\n            \"details\": {\n                \"name\": \"Gerrard Square Shopping Centre\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561929\",\n            \"address\": {\n                \"address1\": \"900 Dufferin Street\",\n                \"address2\": \"#0035\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6H 4A9\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.6552905,\n                \"longitude\": -79.4340602\n            },\n            \"details\": {\n                \"name\": \"Dufferin Mall\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"11:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561679\",\n            \"address\": {\n                \"address1\": \"1980 Saint Clair Avenue West\",\n                \"address2\": \"#A114\",\n                \"city\": \"Toronto\",\n                \"zip\": \"M6N 0A3\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.67270296,\n                \"longitude\": -79.47073431\n            },\n            \"details\": {\n                \"name\": \"Stock Yards Village\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"09:30\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        },\n        {\n            \"code\": \"2561824\",\n            \"address\": {\n                \"address1\": \"700 Lawrence Avenue West\",\n                \"address2\": \"209\",\n                \"city\": \"North York\",\n                \"zip\": \"M6A 3B4\",\n                \"country_code\": \"CA\",\n                \"latitude\": 43.7169556,\n                \"longitude\": -79.4469327\n            },\n            \"details\": {\n                \"name\": \"Lawrence Square\",\n                \"description\": null,\n                \"business_hours\": [\n                    {\n                        \"day\": \"Monday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Tuesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Wednesday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Thursday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Friday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"21:00\"\n                    },\n                    {\n                        \"day\": \"Saturday\",\n                        \"opening_time\": \"10:00\",\n                        \"closing_time\": \"18:00\"\n                    },\n                    {\n                        \"day\": \"Sunday\",\n                        \"opening_time\": \"12:00\",\n                        \"closing_time\": \"17:00\"\n                    }\n                ],\n                \"open_24_hours\": false\n            },\n            \"attributes\": [],\n            \"icon_url\": null,\n            \"availability\": {\n                \"status\": \"unknown\"\n            }\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "12374471-0ca08166-1a5f-45ed-94e2-69a42366e701"
@@ -3841,6 +4024,432 @@
 										}
 									],
 									"id": "12374471-8d467f8a-b283-4d2c-a0fa-1176486c73b1"
+								},
+								{
+									"name": "Braze content with API trigger Copy",
+									"item": [
+										{
+											"name": "01. Trigger Canvas",
+											"id": "12374471-3fc4cd8c-8cc9-44cb-9db1-b7912f0e4f07",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+													"protocol": "https",
+													"host": [
+														"rest",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"canvas",
+														"trigger",
+														"send"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "12374471-fd5351b7-a1b3-42a5-9e5f-ad9766f82b4f",
+													"name": "New Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Authorization",
+																"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "https://rest.iad-07.braze.com/canvas/trigger/send",
+															"protocol": "https",
+															"host": [
+																"rest",
+																"iad-07",
+																"braze",
+																"com"
+															],
+															"path": [
+																"canvas",
+																"trigger",
+																"send"
+															]
+														}
+													},
+													"status": "Created",
+													"code": 201,
+													"_postman_previewlanguage": null,
+													"header": [
+														{
+															"key": "Date",
+															"value": "Fri, 21 Nov 2025 13:04:12 GMT"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														},
+														{
+															"key": "CF-Ray",
+															"value": "9a20643c5a84ed0c-LHR"
+														},
+														{
+															"key": "CF-Cache-Status",
+															"value": "DYNAMIC"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "max-age=0, private, must-revalidate"
+														},
+														{
+															"key": "Content-Encoding",
+															"value": "gzip"
+														},
+														{
+															"key": "ETag",
+															"value": "W/\"18f8e1ef91d139699baa948d5616939b\""
+														},
+														{
+															"key": "Strict-Transport-Security",
+															"value": "max-age=31536000; includeSubDomains"
+														},
+														{
+															"key": "Vary",
+															"value": "Origin,Accept-Encoding"
+														},
+														{
+															"key": "x-ratelimit-limit",
+															"value": "250000"
+														},
+														{
+															"key": "x-ratelimit-remaining",
+															"value": "249999"
+														},
+														{
+															"key": "x-ratelimit-reset",
+															"value": "1763733600"
+														},
+														{
+															"key": "x-request-id",
+															"value": "347a882e-71a8-4aa5-8012-da14bc3bc16c"
+														},
+														{
+															"key": "x-runtime",
+															"value": "0.060508"
+														},
+														{
+															"key": "Server",
+															"value": "cloudflare"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"dispatch_id\": \"6920634c5919f2c5ccc4acc76850c3a8\",\n    \"message\": \"success\"\n}"
+												}
+											]
+										},
+										{
+											"name": "02. Fetch content-cards",
+											"id": "12374471-f0144f6d-e99e-468a-807d-8435e10dd599",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Host",
+														"value": "sdk.iad-07.braze.com"
+													},
+													{
+														"key": "content-type",
+														"value": "application/json"
+													},
+													{
+														"key": "x-braze-req-attempt",
+														"value": "1"
+													},
+													{
+														"key": "accept",
+														"value": "*/*"
+													},
+													{
+														"key": "x-braze-datarequest",
+														"value": "true"
+													},
+													{
+														"key": "braze-sync-retry-count",
+														"value": "2"
+													},
+													{
+														"key": "accept-language",
+														"value": "en-CA,en-US;q=0.9,en;q=0.8"
+													},
+													{
+														"key": "x-braze-last-req-ms-ago",
+														"value": "7200000"
+													},
+													{
+														"key": "user-agent",
+														"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+													},
+													{
+														"key": "x-braze-req-tokens-remaining",
+														"value": "28"
+													},
+													{
+														"key": "x-braze-contentcardsrequest",
+														"value": "true"
+													},
+													{
+														"key": "x-braze-ept-req-tokens-remaining",
+														"value": "4"
+													},
+													{
+														"key": "x-braze-api-key",
+														"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+													"protocol": "https",
+													"host": [
+														"sdk",
+														"iad-07",
+														"braze",
+														"com"
+													],
+													"path": [
+														"api",
+														"v3",
+														"content_cards",
+														"sync"
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "12374471-904849e1-1370-42be-8f02-61396524942f",
+													"name": "Dev Banner Sync",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Host",
+																"value": "sdk.iad-07.braze.com"
+															},
+															{
+																"key": "content-type",
+																"value": "application/json"
+															},
+															{
+																"key": "x-braze-req-attempt",
+																"value": "1"
+															},
+															{
+																"key": "accept",
+																"value": "*/*"
+															},
+															{
+																"key": "x-braze-datarequest",
+																"value": "true"
+															},
+															{
+																"key": "braze-sync-retry-count",
+																"value": "2"
+															},
+															{
+																"key": "accept-language",
+																"value": "en-CA,en-US;q=0.9,en;q=0.8"
+															},
+															{
+																"key": "x-braze-last-req-ms-ago",
+																"value": "7200000"
+															},
+															{
+																"key": "user-agent",
+																"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+															},
+															{
+																"key": "x-braze-req-tokens-remaining",
+																"value": "28"
+															},
+															{
+																"key": "x-braze-contentcardsrequest",
+																"value": "true"
+															},
+															{
+																"key": "x-braze-ept-req-tokens-remaining",
+																"value": "4"
+															},
+															{
+																"key": "x-braze-api-key",
+																"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+															"protocol": "https",
+															"host": [
+																"sdk",
+																"iad-07",
+																"braze",
+																"com"
+															],
+															"path": [
+																"api",
+																"v3",
+																"content_cards",
+																"sync"
+															]
+														}
+													},
+													"status": "Created",
+													"code": 201,
+													"_postman_previewlanguage": null,
+													"header": [
+														{
+															"key": "Date",
+															"value": "Fri, 21 Nov 2025 13:04:15 GMT"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														},
+														{
+															"key": "CF-Ray",
+															"value": "9a20644dcb8663f5-LHR"
+														},
+														{
+															"key": "CF-Cache-Status",
+															"value": "DYNAMIC"
+														},
+														{
+															"key": "Access-Control-Allow-Origin",
+															"value": "*"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "max-age=0, private, must-revalidate"
+														},
+														{
+															"key": "Content-Encoding",
+															"value": "gzip"
+														},
+														{
+															"key": "ETag",
+															"value": "W/\"43211b635f8c12e536b429ee0ac5a9c4\""
+														},
+														{
+															"key": "Strict-Transport-Security",
+															"value": "max-age=31536000; includeSubDomains"
+														},
+														{
+															"key": "Vary",
+															"value": "Origin,Accept-Encoding"
+														},
+														{
+															"key": "x-ratelimit-limit",
+															"value": "500.0"
+														},
+														{
+															"key": "x-ratelimit-remaining",
+															"value": "499.0"
+														},
+														{
+															"key": "x-ratelimit-reset",
+															"value": "1763730258"
+														},
+														{
+															"key": "x-request-id",
+															"value": "dc549e79-9414-4fd6-a990-e1645da1a266"
+														},
+														{
+															"key": "x-runtime",
+															"value": "0.157761"
+														},
+														{
+															"key": "Server",
+															"value": "cloudflare"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9NDgxNWVjY2QtMWRiMi00MGU5LWExNjUtNzc4NDQwMmZjN2YxJmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNS0xMS0yMVQxMiUzQTU2JTNBMjAuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1763729783,\n            \"ea\": 1763988983,\n            \"e\": null,\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        }\n    ],\n    \"last_full_sync_at\": 1763730255,\n    \"last_card_updated_at\": 1763729786,\n    \"full_sync\": true\n}"
+												}
+											]
+										}
+									],
+									"id": "12374471-c86d777b-85b4-4c45-855b-f8e934aa713f"
 								},
 								{
 									"name": "ELF - banners sample",
