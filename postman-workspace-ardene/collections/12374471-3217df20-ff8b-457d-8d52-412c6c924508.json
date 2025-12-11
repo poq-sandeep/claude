@@ -4043,12 +4043,12 @@
 													},
 													{
 														"key": "Authorization",
-														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
+														"value": "Bearer a valid rest api key"
 													}
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"canvas_id\": \"2b44606e-ea3a-4b65-9948-5066fd3f634d\", //Poq_CC_Personalization_Test\n    \"recipients\": [\n      {\n        \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // ,\n        // \"canvas_entry_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
+													"raw": "{\n    \"campaign_id\": \"36110e22-3172-486f-8938-08396440df49\",\n    \"recipients\": [\n      {\n         \"external_user_id\": \"gid://shopify/Customer/8204637077606\"\n        // \"trigger_properties\": {\n        //   \"string_property\": your example string,\n        //   \"example_integer_property\": your example integer           \n        // }\n      }\n    ]\n  }",
 													"options": {
 														"raw": {
 															"language": "json"
