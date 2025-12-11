@@ -4043,7 +4043,7 @@
 													},
 													{
 														"key": "Authorization",
-														"value": "Bearer a valid rest api key"
+														"value": "Bearer d68e56d2-72f8-46ad-b8ea-972089d54e9e"
 													}
 												],
 												"body": {
