@@ -22,13 +22,13 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
-								"key": "grant_type",
-								"value": "authorization_code",
+								"key": "scope",
+								"value": "openid%20email%20customer-account-api:full",
 								"type": "string"
 							},
 							{
-								"key": "scope",
-								"value": "openid%20email%20customer-account-api:full%20customer-account-mcp-api:full",
+								"key": "grant_type",
+								"value": "authorization_code",
 								"type": "string"
 							},
 							{
@@ -120,7 +120,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6c93897a-3fc1-4f96-bb4d-2172f4470803",
+								"id": "8c505ce9-88c0-4db5-ba0c-5d8bf99d2a7a",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -132,7 +132,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8ec715cb-1666-43ad-921c-220d75e35c65",
+								"id": "27548346-cdb9-4fc7-b704-1cbaec4ac70b",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
