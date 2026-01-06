@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "scope",
+								"value": "",
+								"type": "string"
+							},
+							{
 								"key": "clientSecret",
 								"value": "{{shopify-new-customer-account-client-secret}}",
 								"type": "string"
@@ -77,11 +82,6 @@
 								"type": "string"
 							},
 							{
-								"key": "scope",
-								"value": "https://www.googleapis.com/auth/drive.file",
-								"type": "string"
-							},
-							{
 								"key": "grant_type",
 								"value": "authorization_code",
 								"type": "string"
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "52c7f40c-902e-47a6-a669-80e45fb47e5f",
+								"id": "23e24772-56da-4410-ab3f-b26574367de9",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "175bee35-ab05-487a-bb6e-b16ec0009102",
+								"id": "164c9d69-98f6-46e2-a378-c263c430460b",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
