@@ -22,6 +22,16 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "redirect_uri",
+								"value": "ttps://oauth.pstmn.io/v1/callback",
+								"type": "string"
+							},
+							{
+								"key": "useBrowser",
+								"value": false,
+								"type": "boolean"
+							},
+							{
 								"key": "accessTokenUrl",
 								"value": "https://shopify.com/authentication/{{shopify-new-customer-account}}/oauth/token",
 								"type": "string"
@@ -55,11 +65,6 @@
 								"key": "challengeAlgorithm",
 								"value": "S256",
 								"type": "string"
-							},
-							{
-								"key": "useBrowser",
-								"value": true,
-								"type": "boolean"
 							},
 							{
 								"key": "scope",
@@ -97,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "cb8abbe9-806e-4361-8d07-7684cb80cebc",
+								"id": "216fb30b-aff9-4a99-a51f-3e298d83990a",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -109,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "62de44a7-9a67-46a4-a310-06c7ea5fef32",
+								"id": "9ea8f4d5-61df-403f-8069-55c9421bd4fd",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
