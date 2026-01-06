@@ -23,7 +23,7 @@
 						"oauth2": [
 							{
 								"key": "scope",
-								"value": "customer_read_customers,customer_write_customers,customer_read_subscription_contracts,customer_write_subscription_contracts",
+								"value": "openid email customer-account-api:full",
 								"type": "string"
 							},
 							{
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d41e4bcf-a583-42de-8c1e-65f8579558f0",
+								"id": "849d6616-0f81-431a-895f-6fa3a0800a87",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fa68a1e4-c076-4398-b991-ec3786852474",
+								"id": "a75c2371-666a-44a0-91c2-d8b3972b4972",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
