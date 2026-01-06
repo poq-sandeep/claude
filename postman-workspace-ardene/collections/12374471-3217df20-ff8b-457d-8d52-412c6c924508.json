@@ -23,7 +23,7 @@
 						"oauth2": [
 							{
 								"key": "redirect_uri",
-								"value": "ttps://oauth.pstmn.io/v1/callback",
+								"value": "https://dev.poq.io/clients/ardeneshopify/shopify/authorize-callback?Poq-App-Identifier=8b9e850c-d0f4-4ed0-87a4-eba705cbf121",
 								"type": "string"
 							},
 							{
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "216fb30b-aff9-4a99-a51f-3e298d83990a",
+								"id": "e918afe8-540c-4226-bbd4-f77b5b474a09",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9ea8f4d5-61df-403f-8069-55c9421bd4fd",
+								"id": "4716801e-1ada-4e8f-8fa7-6a56e959c10b",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
