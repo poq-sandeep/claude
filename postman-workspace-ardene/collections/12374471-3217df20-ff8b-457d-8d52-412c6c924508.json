@@ -23,7 +23,7 @@
 						"oauth2": [
 							{
 								"key": "scope",
-								"value": "customer_read_customers,customer_write_customers,customer_read_subscription_contracts",
+								"value": "customer_read_customers,customer_write_customers,customer_read_subscription_contracts,customer_write_subscription_contracts",
 								"type": "string"
 							},
 							{
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "9c27ee29-f7e7-400b-b906-e19c56ef5825",
+								"id": "d41e4bcf-a583-42de-8c1e-65f8579558f0",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0eb75b97-cd41-43d6-9841-b09965268854",
+								"id": "fa68a1e4-c076-4398-b991-ec3786852474",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
