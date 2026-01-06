@@ -22,6 +22,34 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "redirect_uri",
+								"value": "https://dev.poq.io/clients/ardeneshopify/shopify/authorize-callback?Poq-App-Identifier=8b9e850c-d0f4-4ed0-87a4-eba705cbf121",
+								"type": "string"
+							},
+							{
+								"key": "useBrowser",
+								"value": false,
+								"type": "boolean"
+							},
+							{
+								"key": "authRequestParams",
+								"value": [
+									{
+										"key": "locale",
+										"value": "en",
+										"enabled": true,
+										"send_as": "request_url"
+									},
+									{
+										"key": "region_country",
+										"value": "GB",
+										"enabled": true,
+										"send_as": "request_url"
+									}
+								],
+								"type": "any"
+							},
+							{
 								"key": "scope",
 								"value": "openid email customer-account-api:full",
 								"type": "string"
@@ -30,11 +58,6 @@
 								"key": "client_authentication",
 								"value": "header",
 								"type": "string"
-							},
-							{
-								"key": "useBrowser",
-								"value": false,
-								"type": "boolean"
 							},
 							{
 								"key": "state",
@@ -49,11 +72,6 @@
 							{
 								"key": "clientId",
 								"value": "{{shopify-new-customer-account-client-id}}",
-								"type": "string"
-							},
-							{
-								"key": "redirect_uri",
-								"value": "https://dev.poq.io/clients/ardeneshopify/shopify/authorize-callback?Poq-App-Identifier=8b9e850c-d0f4-4ed0-87a4-eba705cbf121",
 								"type": "string"
 							},
 							{
@@ -82,11 +100,6 @@
 								"type": "any"
 							},
 							{
-								"key": "authRequestParams",
-								"value": [],
-								"type": "any"
-							},
-							{
 								"key": "challengeAlgorithm",
 								"value": "S256",
 								"type": "string"
@@ -107,7 +120,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6db9e850-fcdd-4508-8de9-0603691944c1",
+								"id": "436c4755-7382-4667-ac95-faca24774298",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -119,7 +132,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bc417a4a-ab9d-4969-9b8b-738d344bcf07",
+								"id": "b79cc808-ae9c-4266-976d-69504f34fdb5",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
