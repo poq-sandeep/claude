@@ -23,7 +23,7 @@
 						"oauth2": [
 							{
 								"key": "scope",
-								"value": "",
+								"value": "customer_read_customers,",
 								"type": "string"
 							},
 							{
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "23e24772-56da-4410-ab3f-b26574367de9",
+								"id": "c0478737-7218-4b31-b9bd-e01c76e74172",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "164c9d69-98f6-46e2-a378-c263c430460b",
+								"id": "ba9eb477-b004-414b-983d-85bb8f94bb0d",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
