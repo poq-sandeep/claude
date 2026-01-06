@@ -22,8 +22,73 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "authUrl",
+								"value": "https://shopify.com/{SHOP_ID}/auth/oauth/authorize",
+								"type": "string"
+							},
+							{
+								"key": "tokenName",
+								"value": "ShopifyNewCustomerAccountToken",
+								"type": "string"
+							},
+							{
+								"key": "refreshRequestParams",
+								"value": [],
+								"type": "any"
+							},
+							{
+								"key": "tokenRequestParams",
+								"value": [],
+								"type": "any"
+							},
+							{
+								"key": "authRequestParams",
+								"value": [],
+								"type": "any"
+							},
+							{
+								"key": "challengeAlgorithm",
+								"value": "S256",
+								"type": "string"
+							},
+							{
+								"key": "useBrowser",
+								"value": true,
+								"type": "boolean"
+							},
+							{
+								"key": "scope",
+								"value": "https://www.googleapis.com/auth/drive.file",
+								"type": "string"
+							},
+							{
+								"key": "grant_type",
+								"value": "authorization_code",
+								"type": "string"
+							},
+							{
+								"key": "clientSecret",
+								"value": "{{GOOGLE_DRIVE_CLIENT_SECRET}}",
+								"type": "string"
+							},
+							{
+								"key": "clientId",
+								"value": "{{GOOGLE_DRIVE_CLIENT_ID}}",
+								"type": "string"
+							},
+							{
 								"key": "addTokenTo",
 								"value": "header",
+								"type": "string"
+							},
+							{
+								"key": "client_authentication",
+								"value": "body",
+								"type": "string"
+							},
+							{
+								"key": "accessTokenUrl",
+								"value": "https://oauth2.googleapis.com/token",
 								"type": "string"
 							}
 						]
@@ -32,7 +97,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8f621ca0-e19b-42c0-b212-3169a933f697",
+								"id": "ceb946f1-c011-41d8-a08a-6af92551a512",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -44,7 +109,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d0806829-ff78-452c-8785-d561a47e6f3d",
+								"id": "b3aaea9c-cca5-4467-be00-0f79726769fa",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
