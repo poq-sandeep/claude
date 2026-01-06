@@ -17,7 +17,43 @@
 				{
 					"name": "New Customer Account Authorization Flow",
 					"item": [],
-					"id": "12374471-a1e46947-3af3-4e08-8d77-0425ef755c91"
+					"id": "12374471-a1e46947-3af3-4e08-8d77-0425ef755c91",
+					"auth": {
+						"type": "oauth2",
+						"oauth2": [
+							{
+								"key": "addTokenTo",
+								"value": "header",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8f621ca0-e19b-42c0-b212-3169a933f697",
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "d0806829-ff78-452c-8785-d561a47e6f3d",
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
 				}
 			],
 			"id": "12374471-03c31d1c-2ba7-43d0-9c7f-97c4762c3181",
