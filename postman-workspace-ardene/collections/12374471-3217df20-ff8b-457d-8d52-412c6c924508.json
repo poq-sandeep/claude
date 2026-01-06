@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "clientId",
+								"value": "{{shopify-new-customer-account-client-id}}",
+								"type": "string"
+							},
+							{
 								"key": "redirect_uri",
 								"value": "https://dev.poq.io/clients/ardeneshopify/shopify/authorize-callback?Poq-App-Identifier=8b9e850c-d0f4-4ed0-87a4-eba705cbf121",
 								"type": "string"
@@ -82,11 +87,6 @@
 								"type": "string"
 							},
 							{
-								"key": "clientId",
-								"value": "{{GOOGLE_DRIVE_CLIENT_ID}}",
-								"type": "string"
-							},
-							{
 								"key": "addTokenTo",
 								"value": "header",
 								"type": "string"
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e918afe8-540c-4226-bbd4-f77b5b474a09",
+								"id": "d53cc16f-3a2b-4fd1-9d95-d33a43934255",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "4716801e-1ada-4e8f-8fa7-6a56e959c10b",
+								"id": "df0099b7-0db9-4de0-a109-4e46e2375ad9",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
