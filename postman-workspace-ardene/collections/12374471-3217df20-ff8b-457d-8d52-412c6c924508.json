@@ -22,8 +22,18 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "grant_type",
+								"value": "authorization_code",
+								"type": "string"
+							},
+							{
 								"key": "scope",
-								"value": "openid email customer-account-api:full customer-account-mcp-api:full",
+								"value": "openid%20email%20customer-account-api:full%20customer-account-mcp-api:full",
+								"type": "string"
+							},
+							{
+								"key": "addTokenTo",
+								"value": "header",
 								"type": "string"
 							},
 							{
@@ -103,16 +113,6 @@
 								"key": "challengeAlgorithm",
 								"value": "S256",
 								"type": "string"
-							},
-							{
-								"key": "grant_type",
-								"value": "authorization_code",
-								"type": "string"
-							},
-							{
-								"key": "addTokenTo",
-								"value": "header",
-								"type": "string"
 							}
 						]
 					},
@@ -120,7 +120,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "2c0ae507-ec9e-4a4c-9dd9-117f7ee0358d",
+								"id": "6c93897a-3fc1-4f96-bb4d-2172f4470803",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -132,7 +132,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3b3aeb70-25c6-47e6-88a2-a05f47b9b4fc",
+								"id": "8ec715cb-1666-43ad-921c-220d75e35c65",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
