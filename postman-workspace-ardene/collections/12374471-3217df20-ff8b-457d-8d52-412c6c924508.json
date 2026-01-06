@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "client_authentication",
+								"value": "header",
+								"type": "string"
+							},
+							{
 								"key": "useBrowser",
 								"value": false,
 								"type": "boolean"
@@ -95,11 +100,6 @@
 								"key": "addTokenTo",
 								"value": "header",
 								"type": "string"
-							},
-							{
-								"key": "client_authentication",
-								"value": "body",
-								"type": "string"
 							}
 						]
 					},
@@ -107,7 +107,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1fd0f799-075d-4a67-b80d-c94e093a6121",
+								"id": "60ed1c4c-725a-40db-b76a-92a288f53b55",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -119,7 +119,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1036971e-0dbb-4e44-80ed-0a5ff180b347",
+								"id": "986648e3-5845-4a30-a8c4-57ab1dda5fc7",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
