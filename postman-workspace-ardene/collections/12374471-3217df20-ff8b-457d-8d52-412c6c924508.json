@@ -23,7 +23,7 @@
 						"oauth2": [
 							{
 								"key": "authUrl",
-								"value": "https://shopify.com/{SHOP_ID}/auth/oauth/authorize",
+								"value": "https://shopify.com/{{shopify-new-customer-account}}/auth/oauth/authorize",
 								"type": "string"
 							},
 							{
@@ -97,7 +97,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "ceb946f1-c011-41d8-a08a-6af92551a512",
+								"id": "4931b9e5-0f65-4485-8a46-d99cc9bd3243",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -109,7 +109,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b3aaea9c-cca5-4467-be00-0f79726769fa",
+								"id": "8af6ac74-176a-47d3-b237-cbffb3582a92",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
