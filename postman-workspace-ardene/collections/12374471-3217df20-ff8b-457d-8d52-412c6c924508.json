@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "clientSecret",
+								"value": "{{shopify-new-customer-account-client-secret}}",
+								"type": "string"
+							},
+							{
 								"key": "clientId",
 								"value": "{{shopify-new-customer-account-client-id}}",
 								"type": "string"
@@ -82,11 +87,6 @@
 								"type": "string"
 							},
 							{
-								"key": "clientSecret",
-								"value": "{{GOOGLE_DRIVE_CLIENT_SECRET}}",
-								"type": "string"
-							},
-							{
 								"key": "addTokenTo",
 								"value": "header",
 								"type": "string"
@@ -102,7 +102,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d53cc16f-3a2b-4fd1-9d95-d33a43934255",
+								"id": "52c7f40c-902e-47a6-a669-80e45fb47e5f",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +114,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "df0099b7-0db9-4de0-a109-4e46e2375ad9",
+								"id": "175bee35-ab05-487a-bb6e-b16ec0009102",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
