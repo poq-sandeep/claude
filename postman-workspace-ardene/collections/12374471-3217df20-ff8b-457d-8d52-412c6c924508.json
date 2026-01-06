@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "state",
+								"value": "hWN7IuLfvnksNqdzc4pdbQyg",
+								"type": "string"
+							},
+							{
 								"key": "scope",
 								"value": "openid email customer-account-api:full",
 								"type": "string"
@@ -102,7 +107,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "849d6616-0f81-431a-895f-6fa3a0800a87",
+								"id": "68ec191b-61da-4a1f-9c6b-454c26130fcc",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -114,7 +119,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a75c2371-666a-44a0-91c2-d8b3972b4972",
+								"id": "2665efdc-90c6-4706-8583-3bbe2a5d3777",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
