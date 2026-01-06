@@ -22,6 +22,11 @@
 						"type": "oauth2",
 						"oauth2": [
 							{
+								"key": "accessTokenUrl",
+								"value": "https://shopify.com/authentication/{{shopify-new-customer-account}}/oauth/token",
+								"type": "string"
+							},
+							{
 								"key": "authUrl",
 								"value": "https://shopify.com/{{shopify-new-customer-account}}/auth/oauth/authorize",
 								"type": "string"
@@ -85,11 +90,6 @@
 								"key": "client_authentication",
 								"value": "body",
 								"type": "string"
-							},
-							{
-								"key": "accessTokenUrl",
-								"value": "https://oauth2.googleapis.com/token",
-								"type": "string"
 							}
 						]
 					},
@@ -97,7 +97,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4931b9e5-0f65-4485-8a46-d99cc9bd3243",
+								"id": "cb8abbe9-806e-4361-8d07-7684cb80cebc",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
@@ -109,7 +109,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8af6ac74-176a-47d3-b237-cbffb3582a92",
+								"id": "62de44a7-9a67-46a4-a310-06c7ea5fef32",
 								"type": "text/javascript",
 								"packages": {},
 								"requests": {},
