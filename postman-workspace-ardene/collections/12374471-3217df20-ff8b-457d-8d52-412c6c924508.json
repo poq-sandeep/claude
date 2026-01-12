@@ -4322,6 +4322,24 @@
 										},
 										{
 											"name": "02. Fetch content-cards",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"id": "dec5b7b5-96d4-4d91-956f-58851230066d",
+														"exec": [
+															"const time = Date.now() / 1000;",
+															"// If you want to match the precision of 1763726565.5530481 you can keep",
+															"// the full floating precision, or round/truncate as needed, e.g.:",
+															"const preciseTime = Number((Date.now() / 1000).toFixed(6)); // 6 decimal places",
+															"pm.collectionVariables.set(\"timestamp\",preciseTime);"
+														],
+														"type": "text/javascript",
+														"packages": {},
+														"requests": {}
+													}
+												}
+											],
 											"id": "12374471-f0144f6d-e99e-468a-807d-8435e10dd599",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
