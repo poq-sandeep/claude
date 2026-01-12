@@ -4402,7 +4402,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": 1763726565.5530481,\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+													"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": {{timestamp}},\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4888,6 +4888,10 @@
 			"key": "collection_version",
 			"value": "1.0.0",
 			"type": "string"
+		},
+		{
+			"key": "timestamp",
+			"value": ""
 		}
 	]
 }
