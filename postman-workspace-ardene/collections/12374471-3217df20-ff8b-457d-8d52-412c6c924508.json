@@ -3733,6 +3733,24 @@
 									"item": [
 										{
 											"name": "01. Trigger Canvas",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"id": "7a773b84-6af0-4bd6-86de-82f921f58a77",
+														"exec": [
+															"const time = Date.now() / 1000;",
+															"// If you want to match the precision of 1763726565.5530481 you can keep",
+															"// the full floating precision, or round/truncate as needed, e.g.:",
+															"const preciseTime = Number((Date.now() / 1000).toFixed(6)); // 6 decimal places",
+															"pm.collectionVariables.set(\"timestamp\",preciseTime);"
+														],
+														"type": "text/javascript",
+														"packages": {},
+														"requests": {}
+													}
+												}
+											],
 											"id": "12374471-02fa00ed-cf67-4e2d-810a-fa822f589a9e",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
