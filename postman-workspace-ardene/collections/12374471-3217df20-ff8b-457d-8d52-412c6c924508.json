@@ -3729,7 +3729,7 @@
 							"name": "SDK Test Harness",
 							"item": [
 								{
-									"name": "Braze content with API trigger",
+									"name": "CONTENT - Braze content with API trigger",
 									"item": [
 										{
 											"name": "01. Trigger Canvas",
@@ -4155,7 +4155,7 @@
 									"id": "12374471-8d467f8a-b283-4d2c-a0fa-1176486c73b1"
 								},
 								{
-									"name": "Braze content with API trigger Copy",
+									"name": "INBOX - Braze content with API trigger",
 									"item": [
 										{
 											"name": "01. Trigger Campaign",
