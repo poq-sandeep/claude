@@ -4166,6 +4166,172 @@
 													"cookie": [],
 													"responseTime": null,
 													"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9NDgxNWVjY2QtMWRiMi00MGU5LWExNjUtNzc4NDQwMmZjN2YxJmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNS0xMS0yMVQxMiUzQTU2JTNBMjAuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1763729783,\n            \"ea\": 1763988983,\n            \"e\": null,\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        }\n    ],\n    \"last_full_sync_at\": 1763730255,\n    \"last_card_updated_at\": 1763729786,\n    \"full_sync\": true\n}"
+												},
+												{
+													"id": "12374471-1d4673ba-14a1-464a-ac90-53f83e1e172a",
+													"name": "02. Fetch content-cards",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Host",
+																"value": "sdk.iad-07.braze.com"
+															},
+															{
+																"key": "content-type",
+																"value": "application/json"
+															},
+															{
+																"key": "x-braze-req-attempt",
+																"value": "1"
+															},
+															{
+																"key": "accept",
+																"value": "*/*"
+															},
+															{
+																"key": "x-braze-datarequest",
+																"value": "true"
+															},
+															{
+																"key": "braze-sync-retry-count",
+																"value": "2"
+															},
+															{
+																"key": "accept-language",
+																"value": "en-CA,en-US;q=0.9,en;q=0.8"
+															},
+															{
+																"key": "x-braze-last-req-ms-ago",
+																"value": "7200000"
+															},
+															{
+																"key": "user-agent",
+																"value": "Ardene/3004 CFNetwork/3826.600.41 Darwin/24.6.0"
+															},
+															{
+																"key": "x-braze-req-tokens-remaining",
+																"value": "28"
+															},
+															{
+																"key": "x-braze-contentcardsrequest",
+																"value": "true"
+															},
+															{
+																"key": "x-braze-ept-req-tokens-remaining",
+																"value": "4"
+															},
+															{
+																"key": "x-braze-api-key",
+																"value": "020ece00-9cd3-4077-80fc-307ac6625b8d"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"api_key\": \"020ece00-9cd3-4077-80fc-307ac6625b8d\",\n    \"app_version\": \"28.0.0\",\n    \"app_version_code\": \"28.0.0.0\",\n    \"device_id\": \"AD3EB16F-4986-4CB5-B5C0-93FFBB9BBD12\",\n    \"last_card_updated_at\": 0,\n    \"last_full_sync_at\": 0,\n    \"sdk_version\": \"13.3.0\",\n    \"time\": {{timestamp}},\n    \"user_id\": \"gid://shopify/Customer/8204637077606\"\n}",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "https://sdk.iad-07.braze.com/api/v3/content_cards/sync",
+															"protocol": "https",
+															"host": [
+																"sdk",
+																"iad-07",
+																"braze",
+																"com"
+															],
+															"path": [
+																"api",
+																"v3",
+																"content_cards",
+																"sync"
+															]
+														}
+													},
+													"status": "Created",
+													"code": 201,
+													"_postman_previewlanguage": null,
+													"header": [
+														{
+															"key": "Date",
+															"value": "Mon, 12 Jan 2026 12:12:25 GMT"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														},
+														{
+															"key": "CF-Ray",
+															"value": "9bcc8fe219b9bd9d-LHR"
+														},
+														{
+															"key": "CF-Cache-Status",
+															"value": "DYNAMIC"
+														},
+														{
+															"key": "Access-Control-Allow-Origin",
+															"value": "*"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "max-age=0, private, must-revalidate"
+														},
+														{
+															"key": "Content-Encoding",
+															"value": "gzip"
+														},
+														{
+															"key": "ETag",
+															"value": "W/\"424db76354155122848b707f4e4d3d6c\""
+														},
+														{
+															"key": "Strict-Transport-Security",
+															"value": "max-age=31536000; includeSubDomains"
+														},
+														{
+															"key": "Vary",
+															"value": "Origin,Accept-Encoding"
+														},
+														{
+															"key": "x-ratelimit-limit",
+															"value": "500.0"
+														},
+														{
+															"key": "x-ratelimit-remaining",
+															"value": "499.0"
+														},
+														{
+															"key": "x-ratelimit-reset",
+															"value": "1768219947"
+														},
+														{
+															"key": "x-request-id",
+															"value": "07a032b8-5dc0-4dd8-a249-b56b3f442f64"
+														},
+														{
+															"key": "x-runtime",
+															"value": "0.277030"
+														},
+														{
+															"key": "Server",
+															"value": "cloudflare"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"cards\": [\n        {\n            \"id\": \"NjkxZjdkZDBhYWY1YjRjYzgyNzFmMWQzXyRfYnAmY2M9MjJkODZkNGItMGVjOS0wMTZlLTY0ZjQtZDhiOWNiNDlhMjE4JmRpJmRtJm12PTY5MWY4MTVkY2I4Yzk0MDA2NDVkMDBiNyZvZCZwaT13ZnMmdz02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MjYmd3A9MjAyNi0wMS0xMlQxMiUzQTEyJTNBMjIuMDAwWiZ3dj02OTFmN2NmMWQwMDAzNDAwNjNkYmY1MmE=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1768219943,\n            \"ea\": 1768479143,\n            \"e\": {\n                \"app-placement-id\": \"small-banner-top\"\n            },\n            \"tp\": \"short_news\",\n            \"ar\": 1,\n            \"i\": null,\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"https://www.ardene.com/ca/en/homepage1\",\n            \"uw\": false,\n            \"tt\": \"Hey there! Check out what's new\",\n            \"ds\": \"We've got fresh arrivals just for you. Don't miss out on styles we think you'll love!\",\n            \"dm\": \"www.ardene.com\"\n        },\n        {\n            \"id\": \"NjkzYWRhNjcyZjhlMWQwMDY0YWM0NDlkXyRfY2M9MTAwOTEzNWYtMmFhOS0yMDY0LWViNTUtNzBmYzliNGE4M2YxJm12PTY5M2FkYTY3MmY4ZTFkMDA2NGFjNDQ5ZiZwaT1jbXA=\",\n            \"v\": false,\n            \"cl\": false,\n            \"p\": false,\n            \"db\": true,\n            \"ca\": 1768219722,\n            \"ea\": 1770811722,\n            \"e\": {\n                \"placement_id\": \"inbox\"\n            },\n            \"tp\": \"banner_image\",\n            \"ar\": 1.356015779092702,\n            \"i\": \"https://braze-images.com/appboy/communication/marketing/content_cards_message_variations/images/693ada672f8e1d0064ac449f/aac59acb73a8e6e71baa13b32a95b61a929c9df5/original.png?1765464903\",\n            \"image_alt\": \"\",\n            \"language\": \"\",\n            \"u\": \"brazeActions://v1/ewAiAHQAeQBwAGUAIgA6ACIAbABvAGcAQwB1AHMAdABvAG0ARQB2AGUAbgB0ACIALAAiAGEAcgBnAHMAIgA6AFsAIgBiAHIAegBfAHAAbwBxAF8AaQBuAGIAbwB4ACIAXQB9AA\",\n            \"uw\": false\n        }\n    ],\n    \"last_full_sync_at\": 1768219945,\n    \"last_card_updated_at\": 1768219945,\n    \"full_sync\": true\n}"
 												}
 											]
 										}
