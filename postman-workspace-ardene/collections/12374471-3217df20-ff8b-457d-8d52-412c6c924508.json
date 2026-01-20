@@ -5039,6 +5039,50 @@
 				}
 			],
 			"id": "12374471-c9eb8518-8247-4b30-bd20-02c3fdd57958"
+		},
+		{
+			"name": "CrowdTwist",
+			"item": [
+				{
+					"name": "Get Activties",
+					"id": "12374471-033224d7-e1c4-45b1-894c-d706dc986ae8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "ak_bmsc=7785DDA66A6D71D020559079470A94A0~000000000000000000000000000000~YAAQXQcQAixceb+bAQAAbZOf2h5i8V05y/OiWZnqFq0Ir+YldPMvIGW6tMURK6GtOBhhyGDoRZ+UdgRwtV9KJkPPQZsU8Aucg+q8X0f8L/e7wfaLsuFdOZMFpQF+GRLtBsGaf+BAS+kM0/t6r/SnRGPGyfDt3cJ7MDDF5qHyKDtCX7HXPWCai0Ue2dMULxFkichrnISZ3O8rgtVOlZAGMS0MSliE+a2Al8+NYb4umXLW6gm3ARgGT4168sB4PK51qamCGJapBi3zsnA/eMZZbWUP6fizWHeIEI8FzaRP5iGUbQh231IDvmM01HE7pDmSZvZJPh7zLyYkmyLjTnXOAHc4IpG7GpcvPecz63qafg=="
+							}
+						],
+						"url": {
+							"raw": "https://sb-api352.crowdtwist.com/v2/users/201059510/activities?api_key=0UDrsvxTPoKrtAfmZejjzZaEsIJkkzfP",
+							"protocol": "https",
+							"host": [
+								"sb-api352",
+								"crowdtwist",
+								"com"
+							],
+							"path": [
+								"v2",
+								"users",
+								"201059510",
+								"activities"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "0UDrsvxTPoKrtAfmZejjzZaEsIJkkzfP"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "12374471-7f42675f-a32a-49d5-b459-a5cb7497349b"
 		}
 	],
 	"event": [
