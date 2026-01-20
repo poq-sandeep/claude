@@ -5044,7 +5044,7 @@
 			"name": "CrowdTwist",
 			"item": [
 				{
-					"name": "01 Get User Rewards",
+					"name": "01 Get User UsableCoupons",
 					"id": "12374471-033224d7-e1c4-45b1-894c-d706dc986ae8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -5053,7 +5053,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{crowdtwist-host-name}}/v2/users/:email_address/rewards?api_key={{crowdtwist-api-key}}&id_type=email",
+							"raw": "https://{{crowdtwist-host-name}}/v2/users/:email_address/usable_coupons?api_key={{crowdtwist-api-key}}&id_type=email",
 							"protocol": "https",
 							"host": [
 								"{{crowdtwist-host-name}}"
@@ -5062,7 +5062,7 @@
 								"v2",
 								"users",
 								":email_address",
-								"rewards"
+								"usable_coupons"
 							],
 							"query": [
 								{
