@@ -5044,7 +5044,7 @@
 			"name": "CrowdTwist",
 			"item": [
 				{
-					"name": "Get User Rewards",
+					"name": "01 Get User Rewards",
 					"id": "12374471-033224d7-e1c4-45b1-894c-d706dc986ae8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -5053,27 +5053,31 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://sb-api352.crowdtwist.com/v2/users/s_multani@yahoo.com/rewards?api_key=0UDrsvxTPoKrtAfmZejjzZaEsIJkkzfP&id_type=email",
+							"raw": "https://{{crowdtwist-host-name}}/v2/users/:email_address/rewards?api_key={{crowdtwist-api-key}}&id_type=email",
 							"protocol": "https",
 							"host": [
-								"sb-api352",
-								"crowdtwist",
-								"com"
+								"{{crowdtwist-host-name}}"
 							],
 							"path": [
 								"v2",
 								"users",
-								"s_multani@yahoo.com",
+								":email_address",
 								"rewards"
 							],
 							"query": [
 								{
 									"key": "api_key",
-									"value": "0UDrsvxTPoKrtAfmZejjzZaEsIJkkzfP"
+									"value": "{{crowdtwist-api-key}}"
 								},
 								{
 									"key": "id_type",
 									"value": "email"
+								}
+							],
+							"variable": [
+								{
+									"key": "email_address",
+									"value": "s_multani@yahoo.com"
 								}
 							]
 						}
