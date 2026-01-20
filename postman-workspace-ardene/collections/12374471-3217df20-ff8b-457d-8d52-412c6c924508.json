@@ -5044,7 +5044,7 @@
 			"name": "CrowdTwist",
 			"item": [
 				{
-					"name": "Get Activties",
+					"name": "Get User Rewards",
 					"id": "12374471-033224d7-e1c4-45b1-894c-d706dc986ae8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
